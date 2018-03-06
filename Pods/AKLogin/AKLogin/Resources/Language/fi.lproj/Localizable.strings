@@ -1,0 +1,26 @@
+/* OK */
+"OK" = "OK";
+
+/* Cancel */
+"Cancel" = "Peruuta";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "Kirjaudu sisään lukemalla sormenjälki";
+
+/* Unsuccessful */
+"Unsuccessful" = "Epäonnistui";
+
+/* Authentication Failed */
+"Authentication Failed" = "Todennus epäonnistui";
+
+/* System Cancelled */
+"System Cancelled" = "Järjestelmän peruutus";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "Todennus ei onnistu";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Touch ID ei ole käytettävissä";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "Touch ID:tä ei ole kirjattu";

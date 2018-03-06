@@ -1,0 +1,2568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0328C32A3712C41EE803A6A6342401EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C719B404D9CD3A5D08A47CE45259AB /* Foundation.framework */; };
+		03A239EFBFFA137788E43100D40486F6 /* he.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A1D11510A53E9C5B4468067338584673 /* he.lproj */; };
+		057A2405D3DB9B9BB428227EF8551465 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71C6BA06018DEDB4D0580C2D8FABEE4 /* Global.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		05E1284F784C94C054B481E49EB2D63E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1275AB5168ABAEF7741B8D7DD3EBAFE1 /* SessionManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		076D921962C52535E1CE38A57F541D98 /* JSON+Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F8F650E9DA02E3163D0DA39B3B55E /* JSON+Number.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		07F4DDD8825D8734E2A2814629D3F072 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6B6E264824A3B2F4040E47CCF95CD /* Constants.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0973A2C744168CF656A45D6106CC3FAB /* JSON+Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F8F650E9DA02E3163D0DA39B3B55E /* JSON+Number.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0D68865C38663584EB4C9CA593447F62 /* MFLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A50F7C2EABBBDE21F6873C1EED785 /* MFLog.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		10773080038F7C9206CAFFCD2BBBF49C /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C502E2CBA20B79F96482BD6284AACDA9 /* es.lproj */; };
+		124D11CFD092C4A9F451B23C95132DCA /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2247D57712ACE899B0745FC95DD87D18 /* nl.lproj */; };
+		126A4AF2BAE8CE32F2F74FEB65DEE59B /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ADF8FC96428EC00BA70E8FF62BAB83 /* Keychain.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		14737A5B9DADDC3270C121EBD3C994CB /* fi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4EA8BDBAC0F3A15B296B5414C0807038 /* fi.lproj */; };
+		147A946F36DF8F3D2E84908351552EAE /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 207379D4CBD280F07867CEB6E37DAC71 /* da.lproj */; };
+		15C1AD723D973D992489727E72564AF4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678540E2B19243FC539201BE6CA010B /* Request.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		165201974EED4B86A24DCC26A0D49E67 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2995F55AB3B512887038924304F92058 /* zh-Hans.lproj */; };
+		16CA61E71413E23DA155073BE1B8A819 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52A8889DE30609725974A8847650E36 /* UIKit.framework */; };
+		17D431BB70F6013F01D93844E8889855 /* DataSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E16FD7448A0967250AEEA70CD8FB2E4 /* DataSourceManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1850CB801CF3DA61D8C6B6C0AFF7611C /* AKKeychain-iOS11.2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 319D79AD0FDB8B2BB545669D0421364A /* AKKeychain-iOS11.2-dummy.m */; };
+		1919AE6CA7B4B165C613C2C7AEC90BED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52A8889DE30609725974A8847650E36 /* UIKit.framework */; };
+		1A296E56F1550ED716998D67376E4E5F /* nb.lproj in Resources */ = {isa = PBXBuildFile; fileRef = AC89394AE3E312F4891DCCE992C353C5 /* nb.lproj */; };
+		1F8E669988F89A3F8EFE9E27644BFFD7 /* AKLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FE79696857293EC7A8BAE01CDA0527E /* AKLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FE55E2960725AEF8F7D950487D6339A /* LocalServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B22A8B5AC9D6C03FE28D943D79B4032 /* LocalServer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		20F4407ACE69DF058CD4EDEB82043C5B /* DataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5FD112074002FFEFF3E32426D878E /* DataCache.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2361159FA379BABC68B01321C4351088 /* DataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C5FD112074002FFEFF3E32426D878E /* DataCache.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		23EE6C3C0434D1C48F5457CB0300A71D /* MultiFactorAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA77C7E1352FC8A0A151CDF134FCA6 /* MultiFactorAuthentication.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		24092CFD55531B2B95DEDF32224718AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D16B54419875AF95C6252E4EC43A9CA /* Images.xcassets */; };
+		247006935E44A4C5FE00D2A79BC179FF /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A718AD716D3BD7F8B10C48EA9FB6C55 /* JSON.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		255593B452528A00E40CD6D149A6139F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71C6BA06018DEDB4D0580C2D8FABEE4 /* Global.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		28A6716D59118FFEF526E3C8387BE866 /* BaseLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE123FE3CB5D99D5C12EE91D51B141E /* BaseLoginViewController.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		29CDC5ED25BF880D54426AFAA2C983D7 /* LoggerConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7ADBDB842CA9E5F03D84E0178BE7F /* LoggerConsole.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2C155A91D7C450F2FD18ABCE9F05A20E /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A718AD716D3BD7F8B10C48EA9FB6C55 /* JSON.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2C50D189C4EBEF02C5789C22766FD186 /* AKLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA91E808BA306AE680CCC08DF7F1201 /* AKLogger.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2DE0D9E5CF259006087376C48EF16EF5 /* AKRequestLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F4016B08EE75B04D59DE123835C004 /* AKRequestLogging.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2DF695797AEF47BDD1A571A5CEBBBACF /* zh.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6806F6302A3C26B405ECD4DA5614CD6F /* zh.lproj */; };
+		32DCCD7AB2CCC2B7513301ADFC12B9BC /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B1973832540ED66DF185A03BF3D2D /* CacheManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		333E8C6EC7F5B69B2FE5B5DE497B5685 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C719B404D9CD3A5D08A47CE45259AB /* Foundation.framework */; };
+		34419EF2607940E13AA544BA051483B7 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF056F60F05F259FD25241978C682B78 /* ForgotPasswordViewController.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		34C84A584447F4AC4B01C435935F0736 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1A46827F3ACC86E471369E4859D9D6 /* QuartzCore.framework */; };
+		3572E0991AFE6444902694172D7CCFFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C719B404D9CD3A5D08A47CE45259AB /* Foundation.framework */; };
+		36CCAFEBDFB4E7AADE69B3F364A6880B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6002AB60A585D38395268E9A3DD3E /* Response.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		38EA96FA0D7C3012CDBEDD62AC5813A1 /* AKKeychain-iOS11.2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9918966B7A5BDAB5EE99AA4F8DAC179 /* AKKeychain-iOS11.2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3948F1736E05B168F1EAB5BB5A19FD58 /* BaseLoginViewController+SSO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4934E8C005751CFEA80632E254375B9 /* BaseLoginViewController+SSO.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		39ECA150A78F4C52ED97E7EA5D2DD07F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C719B404D9CD3A5D08A47CE45259AB /* Foundation.framework */; };
+		3E1B155365878ADD8D7956F3DE2075A7 /* AKRequestLogging+ServerLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB392AD7265989C4E2C2F7FA744646 /* AKRequestLogging+ServerLog.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3ED5F43A65388398891BCAD950246C17 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4003D2DC0590FB53C4A4CC5D0C11CE74 /* ru.lproj */; };
+		404E5F93B486AAB79011A6764AF511CA /* Pods-ISS-Passes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23325CD2B64BCAEA27602972D8F730CB /* Pods-ISS-Passes-dummy.m */; };
+		40B783EE682865CCD22950C9454EBD51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52A8889DE30609725974A8847650E36 /* UIKit.framework */; };
+		416795DD5FB0A63A334C022727AA9961 /* DataSourceManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440DB057683EAA70C4C2715E8235ECF /* DataSourceManager+Extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		435766547EEE0A5F6A6EB67902FBA32A /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C88A03C0565CF9CB9428DDA2FB8E8 /* BoxView.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		43D5111E07DFF4121E9FB2997B510A68 /* ServerPolicyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A2BD4FC3F5692C750479D8EDD06D0 /* ServerPolicyManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		44CCD2FD467CB907EC2DA82F0A1744FB /* AKLogger-iOS11.2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B14BC2F8B470AA15CB8382149F0447D /* AKLogger-iOS11.2-dummy.m */; };
+		4591622FF958C6DFC530406080D5E45F /* AKNetworking-iOS11.2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CDE095130E3D75D36E6DBF4DAAC7A3 /* AKNetworking-iOS11.2-dummy.m */; };
+		46AA07BE6215C5DD12CE597A66AD40CD /* StubURLHTTPProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368888F37AFECCBB2E8FEEEF97D4C749 /* StubURLHTTPProtocol.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		496152CD85DD23876ADE9D0A4FDACDF2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C6B6E264824A3B2F4040E47CCF95CD /* Constants.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4997A88D8E54157228BDEA4AF5B82E06 /* MultiFactorAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA77C7E1352FC8A0A151CDF134FCA6 /* MultiFactorAuthentication.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4A93B2E47838071B399B86BD12A77390 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2995F55AB3B512887038924304F92058 /* zh-Hans.lproj */; };
+		4B2D94FCEC4514F16329040C5E1731E1 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6002AB60A585D38395268E9A3DD3E /* Response.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4BC7E1292D2805A003ACE5A771464FD6 /* UIImageView+ImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557E19D242801A6ED5053315AC46A9B /* UIImageView+ImageCaching.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4BCF5962495DB6EEA8DCED7799585464 /* bg.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 066BF24403BC76BA7A4710081A86D660 /* bg.lproj */; };
+		4CC914E8E6FBB162C29FEBE4F5BA9BA0 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4003D2DC0590FB53C4A4CC5D0C11CE74 /* ru.lproj */; };
+		4D6D457F5C273326936D4D730A4E14CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67A35A9E944F4FBD5E3DF67BE67690F /* CoreGraphics.framework */; };
+		514CE8CC9B884769592A8C97E812EB3D /* AKKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5108998925770D3C627003BB1B96392D /* AKKeychain.framework */; };
+		5181AB49998FB766919EBF8D8354A110 /* LocalServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B22A8B5AC9D6C03FE28D943D79B4032 /* LocalServer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5267124C89F205875588DCF9758E749F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678540E2B19243FC539201BE6CA010B /* Request.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		52AB40ACFFA5A53D3DF5F6791497EC2F /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 51399306B6A72B115E2026189992F3B4 /* cs.lproj */; };
+		53B909CF7449CEFF12210B423E189802 /* uk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5849F907CA48559981A30A2E62BAB5FD /* uk.lproj */; };
+		53D4E6AD30EF7D1CDEBC0621DCEFE1B1 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 50828C59FAAE488D7A1EFD8A00BB9321 /* en.lproj */; };
+		55B53B63FBB33B079DD66A7C64B02530 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D16B54419875AF95C6252E4EC43A9CA /* Images.xcassets */; };
+		55E65F9A730BC09F45D7CDC9CA9A8859 /* BaseLoginViewController+SSO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4934E8C005751CFEA80632E254375B9 /* BaseLoginViewController+SSO.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		56BDCF4E0DD1575F0F42D0A282DB9A6C /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5A9C06D4AFBB4BE4193FC8AD09582D57 /* pt.lproj */; };
+		580EAA6DD50A2ED3D0428CC489496C4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C719B404D9CD3A5D08A47CE45259AB /* Foundation.framework */; };
+		5A98D8DA41571A8FE52AB1EB0AD402D4 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1C4D4C5A5220C5726A8A7002CF967801 /* it.lproj */; };
+		5BA575327D6FBE20362FCCFE02F50BE5 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E239E8C6DCD15BFA551E88515AAF2A6E /* CustomView.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5BD7E2D0A90451B566B51D8ED4F5DE1C /* et.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FBBCE81BEECBC21B4E99937CDB62AA7B /* et.lproj */; };
+		5C7DD20765F5D1C228A994E29193EEBE /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF056F60F05F259FD25241978C682B78 /* ForgotPasswordViewController.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5DD2B41883C93252FAE6681E6474072A /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CF64873B0D762F221F2DA1DB21F35228 /* sv.lproj */; };
+		5EBC3F4C25C0B2D7DB227E4632FBC82A /* ResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5B82CC3A1B0E3A90553EBCAE205F9C /* ResponseValidator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5F4ADD5367B9240B36244C9A8C2D595A /* AKReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997CEE622247EB51FDF05CBE4EA2C50 /* AKReachability.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		621457ABF3C590891542085CF87AA4DC /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = ABA7703424AA8DFB8E7D0AE8100D14F2 /* zh-Hant.lproj */; };
+		652CAB1DD10ED8D77B8DF4AF7BBEEF26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C719B404D9CD3A5D08A47CE45259AB /* Foundation.framework */; };
+		65BF8FD790302AAA620CBC29B490A623 /* LoggerFile+Read+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E894B3500B0E852147B45746FA0F692 /* LoggerFile+Read+Delete.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		687DE0584115B179363F313C7158965B /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CF64873B0D762F221F2DA1DB21F35228 /* sv.lproj */; };
+		68D45042D409C6FE5E433860D96E048A /* JSON+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460236C71934DF32EE3EF08E57F48A2 /* JSON+Date.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		697F57055823B9D506DFA4DCBA5DE646 /* AKNetworking-iOS8.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA78268B8C4C0364C5B6C3903854A95 /* AKNetworking-iOS8.0-dummy.m */; };
+		698B8F34E36BE26BEC830E07C599B556 /* AKLogin-iOS11.2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A68E894792C610D8DB314F33BF65E9B4 /* AKLogin-iOS11.2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A5CF1EA1080105824CCD8CC8A263E09 /* RequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890079F0FDC026C580BACA53216E4E4F /* RequestDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6B3DA1498056B2BBE209495515266D93 /* ServerPolicyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A2BD4FC3F5692C750479D8EDD06D0 /* ServerPolicyManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6B71114660CAE365B537B15CFE84EE35 /* LoginViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F6EC728D540451957F8513B61AF7B /* LoginViewControllerExtension.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6BE50351D633ABE622F7A1313937A629 /* DataSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E16FD7448A0967250AEEA70CD8FB2E4 /* DataSourceManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6D344C1E9A9DE4450513D31E3388C4A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E7FCA1B0AE86A9DFB7D1EECA5B27F /* LoginViewController.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6D89FCA40F62A1AF9F7F4112193A6F30 /* NSCacheBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8DC9703077AD25E3C0D77C567E349 /* NSCacheBase.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6DF189101F997EFAA741ED9D0244592C /* Pods-ISS-PassesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A61A5F7AC6F31B69497454A576329491 /* Pods-ISS-PassesUITests-dummy.m */; };
+		6FDB7A8B48CB75C6B0A8578E8C2FFE20 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048A7612C50CC76FB7D8274A64B1E34 /* Enums.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		706F7EF726D8AEED577ACD8FC9D2AB5B /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1275AB5168ABAEF7741B8D7DD3EBAFE1 /* SessionManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7076344636E7536813A6A5E4AF2D04E5 /* LoggerASL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC40E56335A59F257F6439ECA55B630 /* LoggerASL.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		70AD6A2E3EF5B5D1E942464CC2C378FC /* AKLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA91E808BA306AE680CCC08DF7F1201 /* AKLogger.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		70B7703C1080F4D88362423050694F9D /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5DB5952BEE594F5A957EF3292A928334 /* ro.lproj */; };
+		712AEBAB2775C0E6AE86475423EDE880 /* LoggerConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7ADBDB842CA9E5F03D84E0178BE7F /* LoggerConsole.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7448D8E89FD6834130491CF357084FAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1A46827F3ACC86E471369E4859D9D6 /* QuartzCore.framework */; };
+		75F07A8B1757C7F4200360E00AC4FE61 /* AKKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5108998925770D3C627003BB1B96392D /* AKKeychain.framework */; };
+		76DE9C3317B4A0E63A4080D4472F733B /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ADF8FC96428EC00BA70E8FF62BAB83 /* Keychain.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		79361B5A9CF0A84BFA1252F1CCD089B6 /* UIImageView+ImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557E19D242801A6ED5053315AC46A9B /* UIImageView+ImageCaching.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7A8EF78066DD8F0CB35E00B83CAA42B4 /* SessionManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215E3735D2B30CFCEC19B05743BEDC76 /* SessionManagerDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7AE58F2B85137EA6513038C7635F7BA0 /* AKLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FE79696857293EC7A8BAE01CDA0527E /* AKLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B610E4C21878D03E88FF27F877BCB98 /* SSO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD941076463229BA9EE9F29240AA5DF /* SSO.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7D2D27A1F6A5854990609194C6B718E9 /* LoggerFile+Read+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E894B3500B0E852147B45746FA0F692 /* LoggerFile+Read+Delete.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7D65A48518171D9DEF0ABFEA2AE016E9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E54FA9392AB3BBCACA36FB48C22304 /* Login.storyboard */; };
+		7E85666AC97F3B3F7D9E61311DD3CC85 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D048A7612C50CC76FB7D8274A64B1E34 /* Enums.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7F1915D4DD174B539369C962FBF83446 /* Pods-ISS-PassesTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 608E20980EE50DBA992343E4AE27A30E /* Pods-ISS-PassesTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80D62BE5AD6912C55260D3CC0A9BA23B /* LoginViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F6EC728D540451957F8513B61AF7B /* LoginViewControllerExtension.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		81659E280B3B07B06C47450D72B04FB7 /* AKLogin-iOS8.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEFA1BF2D29C5DD631F840CFAD10431 /* AKLogin-iOS8.0-dummy.m */; };
+		82D25D1BA238C773FEC5016165C15FC8 /* AKLogger-iOS8.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 260C4B4948665370F7E8515D3E7FC790 /* AKLogger-iOS8.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8565E1D7D62F0CE4D3A61BBF7864961B /* LocalServerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195DCFDC98E14C6BFF7E895E5837E46 /* LocalServerDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		858761F56B284DFF3304FA91A077662B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A170C6D2530DE24B0B5FF5ACEFE67DE /* Logger.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		85F0A440E9B2D25952B9D9A1AFFB4258 /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4E28934709DC473D18E386FC9C535 /* String+Base64.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8F583A6533B3F070322032A6BF845859 /* AKLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D96CC935811B2110491F821331AF1F /* AKLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90C09C8F3F3CB1557E4FE55093512581 /* AKKeychain-iOS8.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6980EC2CEB2F17B16E0C889D0E40D3F1 /* AKKeychain-iOS8.0-dummy.m */; };
+		9113231DFEC863E937F96F95E32ABCF1 /* SessionManager+Multipart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AEDA8FE6C1B4FF926517C9F0226318 /* SessionManager+Multipart.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		93BD21E3C94074D6600CE6DFF146B58E /* BridingHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = FF1057353F95A821060A7ED5D587DEAF /* BridingHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		946A7D58D20C02387807BAE17AEF5570 /* BaseLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE123FE3CB5D99D5C12EE91D51B141E /* BaseLoginViewController.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		94C30A1F3807CD8ACA3B032A1D7DE682 /* JSON+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460236C71934DF32EE3EF08E57F48A2 /* JSON+Date.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		95405279AD5D56EF8EB82479E0C2D08E /* bg.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 066BF24403BC76BA7A4710081A86D660 /* bg.lproj */; };
+		9562287339F067E1E32E173DE4F30A36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C719B404D9CD3A5D08A47CE45259AB /* Foundation.framework */; };
+		97998AED02C41AC1111581BBBBF8F5AA /* SessionManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215E3735D2B30CFCEC19B05743BEDC76 /* SessionManagerDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9988541BF662F1F1A25A2182A20FCCE1 /* AKRequestLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F4016B08EE75B04D59DE123835C004 /* AKRequestLogging.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9AC9A83054EC2CEA7EEC93D14D6D2344 /* he.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A1D11510A53E9C5B4468067338584673 /* he.lproj */; };
+		9B013084425AF22260EA68C3CC91F1CC /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C502E2CBA20B79F96482BD6284AACDA9 /* es.lproj */; };
+		9B20C65D851E9EA056C66C2EDCA13EAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52A8889DE30609725974A8847650E36 /* UIKit.framework */; };
+		9BADE875B55EF9A8DCDFA9605B34ADD6 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1C4D4C5A5220C5726A8A7002CF967801 /* it.lproj */; };
+		9C7B42C4191E9B62A821994ECF598CAD /* JSON+Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80548B8DB7E532412A81613F53B382E4 /* JSON+Others.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9DE6D54D28FAAEFAD65CA0DA1DFB6C54 /* AKLogger+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD818D6257EBBEFDDCE1A30F944AF3 /* AKLogger+Functions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9EA0E13B0EC549442E666754B59D5C40 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 12C4C425E068E11F739CAE09A0BAB8D2 /* fr.lproj */; };
+		9F9EF6AAEACE066E1B05E3CF3A243188 /* AKRequestLogging+ServerLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB392AD7265989C4E2C2F7FA744646 /* AKRequestLogging+ServerLog.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A17671EC8E48899DA39013D2A48EF489 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5A9C06D4AFBB4BE4193FC8AD09582D57 /* pt.lproj */; };
+		A32CB2AB18C2520D95D53A06684B6CA1 /* ResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5B82CC3A1B0E3A90553EBCAE205F9C /* ResponseValidator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A3D5A998B336D0F5832F8B408CAF55F0 /* Pods-ISS-PassesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E1AAA6E7E58206DB85D614B7895416 /* Pods-ISS-PassesTests-dummy.m */; };
+		A474BBDAA55FE3AA141B18C3B6564642 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C719B404D9CD3A5D08A47CE45259AB /* Foundation.framework */; };
+		A4BA4575866BB2267A14AB299F1091C5 /* zh.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6806F6302A3C26B405ECD4DA5614CD6F /* zh.lproj */; };
+		A587449E6B00EFE7D60EA4BB113D38AC /* MFLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A50F7C2EABBBDE21F6873C1EED785 /* MFLog.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A68353E37559A672D47565F6251B53CD /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = ABA7703424AA8DFB8E7D0AE8100D14F2 /* zh-Hant.lproj */; };
+		A7A13DC406F0C77F281BBA79CA868F9C /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F6301D43BDA17AD5DE3B2F085E9F16 /* LoginTextField.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AC54C368BB899C6F7FE340C7996BA30F /* el.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D9BF4527351180209AB8313B643127D4 /* el.lproj */; };
+		B13395331CD2D55D983E108DFB302009 /* JSON+Others.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80548B8DB7E532412A81613F53B382E4 /* JSON+Others.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B19C05C1D2CC3483E267F8FC79BFFEF9 /* Pods-ISS-Passes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E1EA9A995EE5774DE165795766F194A /* Pods-ISS-Passes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B54F08E9F4871F5AB2BA8D0710EB5925 /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 207379D4CBD280F07867CEB6E37DAC71 /* da.lproj */; };
+		B6D050CD59103C992762BFED47588FD7 /* MobileFirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C05D66AC7AC90CC147680E5A4DACE71 /* MobileFirstLoginViewController.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B76C8F1BC587F93E82DD7252EC5CB4A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C719B404D9CD3A5D08A47CE45259AB /* Foundation.framework */; };
+		B7C0A55106986F89F4E46C07D241CDED /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E54FA9392AB3BBCACA36FB48C22304 /* Login.storyboard */; };
+		B89E0FA7925BDCE60643B895437E6A40 /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C88A03C0565CF9CB9428DDA2FB8E8 /* BoxView.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BCA527E3488C7EB611E176C6DBD10B2C /* LocalServerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195DCFDC98E14C6BFF7E895E5837E46 /* LocalServerDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BE62AECD3B6433ACE234336EED7C6E76 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7A1BC7A8F91C08A630EB22A93414D567 /* pl.lproj */; };
+		BE640025E0C743E97FF67DA92943FA49 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F6301D43BDA17AD5DE3B2F085E9F16 /* LoginTextField.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BF00DA392EACE0CA914F09CC79E36D22 /* et.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FBBCE81BEECBC21B4E99937CDB62AA7B /* et.lproj */; };
+		BFC449E1E5A6C397D6725EB70B8783DB /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E818369F415915FA89AB29609DC7AA /* LoginButton.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C376992D685CFB6FC48D2DFA7FDDE8A8 /* BridingHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = FF1057353F95A821060A7ED5D587DEAF /* BridingHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C3F6BD303E3BAA92160509CD474875 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FF22114031395F23FC6F31887B65C0A5 /* ja.lproj */; };
+		C40C328D57D9679AA203B348D9A23961 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A170C6D2530DE24B0B5FF5ACEFE67DE /* Logger.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C4C7EF39E64F0B24387551CFC4004273 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3CBED3079B55FA0A7056D8113F47901A /* ko.lproj */; };
+		C545483566C4E717208CDD12435AB3A5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D713078A46E98F047B30907C3212F18 /* Security.framework */; };
+		C56A196F3D3B43FBFDF7201DE287A675 /* DataSourceManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440DB057683EAA70C4C2715E8235ECF /* DataSourceManager+Extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C57078E19278BB61BC4E2220342EF28D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E7FCA1B0AE86A9DFB7D1EECA5B27F /* LoginViewController.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C9436B37A21A8606943B3093063E798B /* el.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D9BF4527351180209AB8313B643127D4 /* el.lproj */; };
+		CB763BB9EDE6D679727BF75069D7D2D4 /* nb.lproj in Resources */ = {isa = PBXBuildFile; fileRef = AC89394AE3E312F4891DCCE992C353C5 /* nb.lproj */; };
+		CE8EBDB82FBAC999B5E85E432425B212 /* AKLogin-iOS11.2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61446212FD06052325712B39499D3EE5 /* AKLogin-iOS11.2-dummy.m */; };
+		CE9CF30329044E9B0A4B8876764C3852 /* LoggerFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F0C8C2CD9A631DA9E2E0EF16A7784 /* LoggerFile.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CF451B31DD277733848CC3210113671F /* StubURLHTTPProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368888F37AFECCBB2E8FEEEF97D4C749 /* StubURLHTTPProtocol.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CFA012EE9FBEFE9C6D727D1D2D076D9D /* SessionManager+Multipart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AEDA8FE6C1B4FF926517C9F0226318 /* SessionManager+Multipart.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D0000C4A9F9A654D5E30A66964EA58DD /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5DB5952BEE594F5A957EF3292A928334 /* ro.lproj */; };
+		D0F98818EC12234CF357659F3EAF47A7 /* AKNetworking-iOS8.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C22B030EEF4CC1149EA5D6AD67F3C1E0 /* AKNetworking-iOS8.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D11AD76638B8F05AB46BD5002059873F /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 51399306B6A72B115E2026189992F3B4 /* cs.lproj */; };
+		D172B38776B53C1D5659AB36BCE8722B /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 50828C59FAAE488D7A1EFD8A00BB9321 /* en.lproj */; };
+		D1931C4BF0A9B65886830A4A08181321 /* MobileFirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C05D66AC7AC90CC147680E5A4DACE71 /* MobileFirstLoginViewController.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D227344954509A276EAF4794EDE93BF6 /* NSCacheBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8DC9703077AD25E3C0D77C567E349 /* NSCacheBase.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D678678A3C27FB9198733FC95652286F /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 792D78872A2CE69931777491AF7F2611 /* de.lproj */; };
+		D7ED62DDBE6D275E79F3257A84AE6C55 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E239E8C6DCD15BFA551E88515AAF2A6E /* CustomView.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D96AD07783B03CC1D7C3AE43CC76C596 /* RequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890079F0FDC026C580BACA53216E4E4F /* RequestDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D9EC47822225C67DBB3B092C8616EBFB /* be.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7B8D7C9EA0FF75D92F97482493EA124B /* be.lproj */; };
+		D9F3D616AF5DE53DEE2B08A3FC69A048 /* Pods-ISS-PassesUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE3AF2FD450100F5E2AB896F41B7F19 /* Pods-ISS-PassesUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC84E7CA9113B31189E0F2FB867A9ADA /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B1973832540ED66DF185A03BF3D2D /* CacheManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DEF066BAC5D5A76DA3CD84F0D64A637B /* AKLogger-iOS8.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E644FF742E5141F6C0D078B5B6595A95 /* AKLogger-iOS8.0-dummy.m */; };
+		DFA6EE4AFC8C240D2E1320C5622999CF /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7A1BC7A8F91C08A630EB22A93414D567 /* pl.lproj */; };
+		E159513D807B37E897719E958F55F21F /* AKReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3997CEE622247EB51FDF05CBE4EA2C50 /* AKReachability.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E4F96BD35152161B5238703ACF226733 /* sk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 444E35D5B62C13D9D920A95C1D1E8864 /* sk.lproj */; };
+		E5EB63A026AA6F96014C4F9E3BD63AE8 /* SSO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD941076463229BA9EE9F29240AA5DF /* SSO.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E71FE3DF330E12F56165D2F65B3E1F97 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FF22114031395F23FC6F31887B65C0A5 /* ja.lproj */; };
+		E7A8C3F50B6997D7338897A0D1A7B5CB /* AKKeychain-iOS8.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2A9948619B1F7E98BEDB83B46D91384 /* AKKeychain-iOS8.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7D090D68AFACE6CA4C4E2A49F2BCE72 /* AKNetworking-iOS11.2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 390AEB20EA6759031AAB0F4FCA0C83ED /* AKNetworking-iOS11.2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9AB026EA04218A691A4260450293D4B /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4E28934709DC473D18E386FC9C535 /* String+Base64.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EAA07C9F111F2374EC694E63BFFE6C59 /* AKLogin-iOS8.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BA2876E872C08A28D5E45CE892B7B10 /* AKLogin-iOS8.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB4FDEE87EFCEE7D400B59984E7D44A4 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 792D78872A2CE69931777491AF7F2611 /* de.lproj */; };
+		EBFCEDB23C89D1650BFCFEE6AC555B8C /* sk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 444E35D5B62C13D9D920A95C1D1E8864 /* sk.lproj */; };
+		ECE4E316CC5D28BABE56B79B8CAB11F0 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2247D57712ACE899B0745FC95DD87D18 /* nl.lproj */; };
+		EED3060D1BBD2E49A3AD79E86A667FE3 /* uk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5849F907CA48559981A30A2E62BAB5FD /* uk.lproj */; };
+		EF1743C1A61AA3E73BA199537F9FC259 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67A35A9E944F4FBD5E3DF67BE67690F /* CoreGraphics.framework */; };
+		EF720C6C95359D215D6F90CFF45CAEBE /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E818369F415915FA89AB29609DC7AA /* LoginButton.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F0EA287C7FE6851D7AA45092D38FC6A9 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3CBED3079B55FA0A7056D8113F47901A /* ko.lproj */; };
+		F1F972EACFE1E613A8F16B196739FF25 /* LoggerASL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC40E56335A59F257F6439ECA55B630 /* LoggerASL.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F50441C75AF3658984526C54D4E14388 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D713078A46E98F047B30907C3212F18 /* Security.framework */; };
+		F5C73C5F41C2412264BF61BE5A382EE8 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 12C4C425E068E11F739CAE09A0BAB8D2 /* fr.lproj */; };
+		F7838B04A9658ED9FAA8899EFDD7132C /* AKLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D96CC935811B2110491F821331AF1F /* AKLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F91B722A0A4AB7316AD7A8CE68586CDC /* LoggerFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F0C8C2CD9A631DA9E2E0EF16A7784 /* LoggerFile.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FBFD637E102365563BDC6AD0718015AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C719B404D9CD3A5D08A47CE45259AB /* Foundation.framework */; };
+		FD637D83E4483118F2F2B572FE1F3A80 /* AKLogger+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FD818D6257EBBEFDDCE1A30F944AF3 /* AKLogger+Functions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FDD9AEAEC10A8FF9F7C38B1CE26AB538 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C719B404D9CD3A5D08A47CE45259AB /* Foundation.framework */; };
+		FE9A340FA352A48141456E3E1DF929FD /* AKLogger-iOS11.2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8927F7E78CC7DC520D3EE134A4F7DED1 /* AKLogger-iOS11.2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEEAFA541FE3538467FA51326ECA8E02 /* be.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7B8D7C9EA0FF75D92F97482493EA124B /* be.lproj */; };
+		FF8D4AFEDCBCEF6DC99E8AA52054AED9 /* fi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4EA8BDBAC0F3A15B296B5414C0807038 /* fi.lproj */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		182DEF4698EC2AFA6C5E767B30C744E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BDADC65B4FCA310D4E39969DD9B9B5B;
+			remoteInfo = "AKNetworking-iOS11.2";
+		};
+		1E499A7D4F62CCA05D06994CE08FB75C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D0691D1C90F8A24BBC30A9ABDA62193;
+			remoteInfo = "AKKeychain-iOS11.2";
+		};
+		30E4EBFA09F5F397778944DA49250253 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1DAE1A7ADAA8FFF26A0EAB4C8C0B6CA;
+			remoteInfo = "AKNetworking-iOS8.0";
+		};
+		32E4CC954FC537116ACD76226BD759B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58AFC5673581B01DD22F26DD378F3E43;
+			remoteInfo = "AKLogger-iOS8.0";
+		};
+		4254C3F3B9D9B0D39E7ED237E276BD6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D433CD9694E2866A682E59918ADCDF55;
+			remoteInfo = "AKKeychain-iOS8.0";
+		};
+		53169CF4160E35623DC47BFC5EA9C902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53CC93B2B7E38C2458FF921E2D56E07B;
+			remoteInfo = "AKLogger-iOS11.2";
+		};
+		7DABEC4735FE204F6A492138E275F0C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F58C8EFA2617B727C45DC725B377DEB;
+			remoteInfo = "AKLogin-iOS11.2";
+		};
+		9512A1E9AD5EF9A35929611E766E5455 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D0691D1C90F8A24BBC30A9ABDA62193;
+			remoteInfo = "AKKeychain-iOS11.2";
+		};
+		96FEA18588D53C1E3D6248238E5052F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BDADC65B4FCA310D4E39969DD9B9B5B;
+			remoteInfo = "AKNetworking-iOS11.2";
+		};
+		A431F8A3F3F383132A8059DE5FD57C58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F58C8EFA2617B727C45DC725B377DEB;
+			remoteInfo = "AKLogin-iOS11.2";
+		};
+		B9D79B3B1DF9D69BAFF216F7342C72D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D433CD9694E2866A682E59918ADCDF55;
+			remoteInfo = "AKKeychain-iOS8.0";
+		};
+		C9DE5A8EF78781CBA71D587D2BAC9287 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D433CD9694E2866A682E59918ADCDF55;
+			remoteInfo = "AKKeychain-iOS8.0";
+		};
+		D94C65D6CDB4079E1EB4719E1BC0AB8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C072DC72F6CC094ED35D9B7545211AE6;
+			remoteInfo = "AKLogin-iOS8.0";
+		};
+		EAB0481F5E0EF3C9E6A92587A49EE833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53CC93B2B7E38C2458FF921E2D56E07B;
+			remoteInfo = "AKLogger-iOS11.2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0005363AA43DC1C5B482614478A2728B /* Pods_ISS_Passes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ISS_Passes.framework; path = "Pods-ISS-Passes.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		014823821289CB7BFA4DFB5CD5F111B7 /* Pods-ISS-Passes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISS-Passes.debug.xcconfig"; sourceTree = "<group>"; };
+		025A7F0AB5032BA788EE01E4431583B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0304EFBD1718B219B78663359A81BC3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03CDE095130E3D75D36E6DBF4DAAC7A3 /* AKNetworking-iOS11.2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AKNetworking-iOS11.2-dummy.m"; sourceTree = "<group>"; };
+		058D927EC971241BD576B2B35101D792 /* Pods-ISS-PassesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ISS-PassesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		05AEDA8FE6C1B4FF926517C9F0226318 /* SessionManager+Multipart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SessionManager+Multipart.swift"; path = "AKNetworking/Sources/Core/Managers/SessionManager+Multipart.swift"; sourceTree = "<group>"; };
+		066BF24403BC76BA7A4710081A86D660 /* bg.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = bg.lproj; path = AKLogin/Resources/Language/bg.lproj; sourceTree = "<group>"; };
+		06CBC2B58F898DF1FA00D9D3BBEAA275 /* AKNetworking-iOS11.2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AKNetworking-iOS11.2.xcconfig"; sourceTree = "<group>"; };
+		0A8C88A03C0565CF9CB9428DDA2FB8E8 /* BoxView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoxView.swift; path = AKLogin/Sources/Presentation/Interface/View/BoxView.swift; sourceTree = "<group>"; };
+		0ABB392AD7265989C4E2C2F7FA744646 /* AKRequestLogging+ServerLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AKRequestLogging+ServerLog.swift"; path = "AKNetworking/Sources/Core/Logging/AKRequestLogging+ServerLog.swift"; sourceTree = "<group>"; };
+		0C2D5DCAB581690E7D170498312191B8 /* AKKeychain-iOS8.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "AKKeychain-iOS8.0.modulemap"; path = "../AKKeychain-iOS8.0/AKKeychain-iOS8.0.modulemap"; sourceTree = "<group>"; };
+		0D832FB8D5B2DE683540D54CEB7750B3 /* AKKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AKKeychain.framework; path = "AKKeychain-iOS11.2.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		115B1973832540ED66DF185A03BF3D2D /* CacheManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheManager.swift; path = AKNetworking/Sources/Core/Managers/CacheManager.swift; sourceTree = "<group>"; };
+		1275AB5168ABAEF7741B8D7DD3EBAFE1 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = AKNetworking/Sources/Core/Managers/SessionManager.swift; sourceTree = "<group>"; };
+		12C4C425E068E11F739CAE09A0BAB8D2 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = AKLogin/Resources/Language/fr.lproj; sourceTree = "<group>"; };
+		139440F7379AB172A6647134D0C2D752 /* AKLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AKLogin.framework; path = "AKLogin-iOS11.2.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1440DB057683EAA70C4C2715E8235ECF /* DataSourceManager+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DataSourceManager+Extensions.swift"; path = "AKNetworking/Sources/Core/Managers/DataSourceManager+Extensions.swift"; sourceTree = "<group>"; };
+		1C4D4C5A5220C5726A8A7002CF967801 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = AKLogin/Resources/Language/it.lproj; sourceTree = "<group>"; };
+		1E1EA9A995EE5774DE165795766F194A /* Pods-ISS-Passes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ISS-Passes-umbrella.h"; sourceTree = "<group>"; };
+		1FC40E56335A59F257F6439ECA55B630 /* LoggerASL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoggerASL.swift; path = AKLogger/Sources/Core/LoggerASL.swift; sourceTree = "<group>"; };
+		207379D4CBD280F07867CEB6E37DAC71 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = da.lproj; path = AKLogin/Resources/Language/da.lproj; sourceTree = "<group>"; };
+		215E3735D2B30CFCEC19B05743BEDC76 /* SessionManagerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManagerDelegate.swift; path = AKNetworking/Sources/Core/Managers/SessionManagerDelegate.swift; sourceTree = "<group>"; };
+		2247D57712ACE899B0745FC95DD87D18 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = AKLogin/Resources/Language/nl.lproj; sourceTree = "<group>"; };
+		22D96CC935811B2110491F821331AF1F /* AKLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLogger.h; path = AKLogger/Sources/Core/AKLogger.h; sourceTree = "<group>"; };
+		23325CD2B64BCAEA27602972D8F730CB /* Pods-ISS-Passes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISS-Passes-dummy.m"; sourceTree = "<group>"; };
+		249116EAC503587B7B09062CC8AE3610 /* Pods_ISS_PassesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ISS_PassesUITests.framework; path = "Pods-ISS-PassesUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25384277036203574B6A8A90445CBBC1 /* Pods-ISS-Passes-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISS-Passes-resources.sh"; sourceTree = "<group>"; };
+		260C4B4948665370F7E8515D3E7FC790 /* AKLogger-iOS8.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AKLogger-iOS8.0-umbrella.h"; path = "../AKLogger-iOS8.0/AKLogger-iOS8.0-umbrella.h"; sourceTree = "<group>"; };
+		260E7FCA1B0AE86A9DFB7D1EECA5B27F /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = AKLogin/Sources/Presentation/Interface/LoginViewController.swift; sourceTree = "<group>"; };
+		26ADF8FC96428EC00BA70E8FF62BAB83 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = AKKeychain/Sources/Core/Keychain.swift; sourceTree = "<group>"; };
+		29526CCF2D955F6F8B636C5B71450016 /* Pods-ISS-PassesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ISS-PassesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2995F55AB3B512887038924304F92058 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "AKLogin/Resources/Language/zh-Hans.lproj"; sourceTree = "<group>"; };
+		2A718AD716D3BD7F8B10C48EA9FB6C55 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = AKNetworking/Sources/Core/Serializers/JSON.swift; sourceTree = "<group>"; };
+		2C028684648F636C684C62F4D6FC540D /* Pods-ISS-PassesTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISS-PassesTests-resources.sh"; sourceTree = "<group>"; };
+		2C0450CEA326DA3A184E767446DA4903 /* Pods-ISS-PassesUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ISS-PassesUITests.modulemap"; sourceTree = "<group>"; };
+		2C05D66AC7AC90CC147680E5A4DACE71 /* MobileFirstLoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MobileFirstLoginViewController.swift; path = AKLogin/Sources/Presentation/Interface/MobileFirstLoginViewController.swift; sourceTree = "<group>"; };
+		319D79AD0FDB8B2BB545669D0421364A /* AKKeychain-iOS11.2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AKKeychain-iOS11.2-dummy.m"; sourceTree = "<group>"; };
+		32E6CB58AA79DF61DB33F8BA4FB5BB22 /* Pods-ISS-Passes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ISS-Passes-acknowledgements.plist"; sourceTree = "<group>"; };
+		33A6E48E9D8FDC406C56EF57167FBA55 /* AKLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AKLogin.framework; path = "AKLogin-iOS8.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B6002AB60A585D38395268E9A3DD3E /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = AKNetworking/Sources/Core/Serializers/Response.swift; sourceTree = "<group>"; };
+		34E1AAA6E7E58206DB85D614B7895416 /* Pods-ISS-PassesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISS-PassesTests-dummy.m"; sourceTree = "<group>"; };
+		357DFABE5EE07E2E056FF69709D2A320 /* AKNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AKNetworking.framework; path = "AKNetworking-iOS11.2.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36085F05CABA2D7B4C23B1D36DEFD941 /* AKKeychain-iOS8.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AKKeychain-iOS8.0-prefix.pch"; path = "../AKKeychain-iOS8.0/AKKeychain-iOS8.0-prefix.pch"; sourceTree = "<group>"; };
+		368888F37AFECCBB2E8FEEEF97D4C749 /* StubURLHTTPProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubURLHTTPProtocol.swift; path = AKNetworking/Sources/Core/Serializers/StubURLHTTPProtocol.swift; sourceTree = "<group>"; };
+		37E8D9EB30DB78B3DE80A7E77B2BD23F /* AKKeychain-iOS11.2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "AKKeychain-iOS11.2.modulemap"; sourceTree = "<group>"; };
+		390AEB20EA6759031AAB0F4FCA0C83ED /* AKNetworking-iOS11.2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKNetworking-iOS11.2-umbrella.h"; sourceTree = "<group>"; };
+		3997CEE622247EB51FDF05CBE4EA2C50 /* AKReachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AKReachability.swift; path = AKNetworking/Sources/Helpers/AKReachability.swift; sourceTree = "<group>"; };
+		3CBED3079B55FA0A7056D8113F47901A /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = AKLogin/Resources/Language/ko.lproj; sourceTree = "<group>"; };
+		3CE695BE9B7E7337E1226B538FE4C523 /* AKKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AKKeychain.framework; path = "AKKeychain-iOS8.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E16FD7448A0967250AEEA70CD8FB2E4 /* DataSourceManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSourceManager.swift; path = AKNetworking/Sources/Core/Managers/DataSourceManager.swift; sourceTree = "<group>"; };
+		3E83D08375EAA05F63A7DAD783798D3F /* Pods-ISS-Passes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ISS-Passes.modulemap"; sourceTree = "<group>"; };
+		3F5F6EC728D540451957F8513B61AF7B /* LoginViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginViewControllerExtension.swift; path = AKLogin/Sources/Core/LoginViewControllerExtension.swift; sourceTree = "<group>"; };
+		4003D2DC0590FB53C4A4CC5D0C11CE74 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = AKLogin/Resources/Language/ru.lproj; sourceTree = "<group>"; };
+		444E35D5B62C13D9D920A95C1D1E8864 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = sk.lproj; path = AKLogin/Resources/Language/sk.lproj; sourceTree = "<group>"; };
+		4913B608FC48120F0E44203E9C07BD3D /* AKNetworking-iOS11.2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "AKNetworking-iOS11.2.modulemap"; sourceTree = "<group>"; };
+		497B829D10FF11471817EB10A5F3352F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../AKKeychain-iOS8.0/Info.plist"; sourceTree = "<group>"; };
+		4D713078A46E98F047B30907C3212F18 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		4EA8BDBAC0F3A15B296B5414C0807038 /* fi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fi.lproj; path = AKLogin/Resources/Language/fi.lproj; sourceTree = "<group>"; };
+		50828C59FAAE488D7A1EFD8A00BB9321 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = AKLogin/Resources/Language/en.lproj; sourceTree = "<group>"; };
+		5108998925770D3C627003BB1B96392D /* AKKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AKKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51399306B6A72B115E2026189992F3B4 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = cs.lproj; path = AKLogin/Resources/Language/cs.lproj; sourceTree = "<group>"; };
+		52927ED4F33BD8E12F27172D38970FC9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../AKNetworking-iOS8.0/Info.plist"; sourceTree = "<group>"; };
+		545B978EDC360769097B4952E4112781 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54B380D83AC4299B556635C091FB0CEA /* AKNetworking-iOS8.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AKNetworking-iOS8.0.xcconfig"; path = "../AKNetworking-iOS8.0/AKNetworking-iOS8.0.xcconfig"; sourceTree = "<group>"; };
+		54FB269E2CD44717406F93587D262B62 /* Pods-ISS-PassesUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISS-PassesUITests-resources.sh"; sourceTree = "<group>"; };
+		568E8F93E093B644AA65FEB51968E199 /* AKLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AKLogger.framework; path = "AKLogger-iOS8.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		579F0C8C2CD9A631DA9E2E0EF16A7784 /* LoggerFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoggerFile.swift; path = AKLogger/Sources/Core/LoggerFile.swift; sourceTree = "<group>"; };
+		5849F907CA48559981A30A2E62BAB5FD /* uk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = uk.lproj; path = AKLogin/Resources/Language/uk.lproj; sourceTree = "<group>"; };
+		58C6B6E264824A3B2F4040E47CCF95CD /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = AKLogin/Sources/Core/Constants.swift; sourceTree = "<group>"; };
+		5A9C06D4AFBB4BE4193FC8AD09582D57 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = AKLogin/Resources/Language/pt.lproj; sourceTree = "<group>"; };
+		5DB5952BEE594F5A957EF3292A928334 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ro.lproj; path = AKLogin/Resources/Language/ro.lproj; sourceTree = "<group>"; };
+		5E537F19CE9468768030F0F321EA4CEF /* AKKeychain-iOS8.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AKKeychain-iOS8.0.xcconfig"; path = "../AKKeychain-iOS8.0/AKKeychain-iOS8.0.xcconfig"; sourceTree = "<group>"; };
+		5E5B82CC3A1B0E3A90553EBCAE205F9C /* ResponseValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseValidator.swift; path = AKNetworking/Sources/Core/Serializers/ResponseValidator.swift; sourceTree = "<group>"; };
+		5FE123FE3CB5D99D5C12EE91D51B141E /* BaseLoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseLoginViewController.swift; path = AKLogin/Sources/Presentation/Interface/BaseLoginViewController.swift; sourceTree = "<group>"; };
+		608E20980EE50DBA992343E4AE27A30E /* Pods-ISS-PassesTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ISS-PassesTests-umbrella.h"; sourceTree = "<group>"; };
+		61446212FD06052325712B39499D3EE5 /* AKLogin-iOS11.2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AKLogin-iOS11.2-dummy.m"; sourceTree = "<group>"; };
+		64386393F7491FB0B269849D52E2B5DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6806F6302A3C26B405ECD4DA5614CD6F /* zh.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = zh.lproj; path = AKLogin/Resources/Language/zh.lproj; sourceTree = "<group>"; };
+		6980EC2CEB2F17B16E0C889D0E40D3F1 /* AKKeychain-iOS8.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AKKeychain-iOS8.0-dummy.m"; path = "../AKKeychain-iOS8.0/AKKeychain-iOS8.0-dummy.m"; sourceTree = "<group>"; };
+		6B14BC2F8B470AA15CB8382149F0447D /* AKLogger-iOS11.2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AKLogger-iOS11.2-dummy.m"; sourceTree = "<group>"; };
+		6BA2876E872C08A28D5E45CE892B7B10 /* AKLogin-iOS8.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AKLogin-iOS8.0-umbrella.h"; path = "../AKLogin-iOS8.0/AKLogin-iOS8.0-umbrella.h"; sourceTree = "<group>"; };
+		6CE3AF2FD450100F5E2AB896F41B7F19 /* Pods-ISS-PassesUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ISS-PassesUITests-umbrella.h"; sourceTree = "<group>"; };
+		6D16B54419875AF95C6252E4EC43A9CA /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AKLogin/Resources/Images.xcassets; sourceTree = "<group>"; };
+		6FE79696857293EC7A8BAE01CDA0527E /* AKLogin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLogin.h; path = AKLogin/Sources/Core/AKLogin.h; sourceTree = "<group>"; };
+		792D78872A2CE69931777491AF7F2611 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = AKLogin/Resources/Language/de.lproj; sourceTree = "<group>"; };
+		7A1BC7A8F91C08A630EB22A93414D567 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = AKLogin/Resources/Language/pl.lproj; sourceTree = "<group>"; };
+		7B22A8B5AC9D6C03FE28D943D79B4032 /* LocalServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalServer.swift; path = AKNetworking/Sources/Core/LocalServer/LocalServer.swift; sourceTree = "<group>"; };
+		7B8D7C9EA0FF75D92F97482493EA124B /* be.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = be.lproj; path = AKLogin/Resources/Language/be.lproj; sourceTree = "<group>"; };
+		7BE9506565887F0F2B52D009C45DBB70 /* AKLogger-iOS11.2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKLogger-iOS11.2-prefix.pch"; sourceTree = "<group>"; };
+		7D233DE4B8E0594EA611C3C1C0EA3CE9 /* AKLogin-iOS11.2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AKLogin-iOS11.2.xcconfig"; sourceTree = "<group>"; };
+		7E894B3500B0E852147B45746FA0F692 /* LoggerFile+Read+Delete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LoggerFile+Read+Delete.swift"; path = "AKLogger/Sources/Core/LoggerFile+Read+Delete.swift"; sourceTree = "<group>"; };
+		7E98AAB99AB97152726519D2F2F43153 /* Pods-ISS-PassesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISS-PassesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		80548B8DB7E532412A81613F53B382E4 /* JSON+Others.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JSON+Others.swift"; path = "AKNetworking/Sources/Core/Serializers/JSON+Others.swift"; sourceTree = "<group>"; };
+		8460236C71934DF32EE3EF08E57F48A2 /* JSON+Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JSON+Date.swift"; path = "AKNetworking/Sources/Core/Serializers/JSON+Date.swift"; sourceTree = "<group>"; };
+		890079F0FDC026C580BACA53216E4E4F /* RequestDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestDelegate.swift; path = AKNetworking/Sources/Core/Serializers/RequestDelegate.swift; sourceTree = "<group>"; };
+		8927F7E78CC7DC520D3EE134A4F7DED1 /* AKLogger-iOS11.2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKLogger-iOS11.2-umbrella.h"; sourceTree = "<group>"; };
+		8AA6A1C581351340B1BFDEBDD65966E1 /* AKLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AKLogger.framework; path = "AKLogger-iOS11.2.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B5D8A5208ECFF596EC2CE4AA229C741 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../AKLogin-iOS8.0/Info.plist"; sourceTree = "<group>"; };
+		8FD941076463229BA9EE9F29240AA5DF /* SSO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSO.swift; path = AKKeychain/Sources/Core/SSO.swift; sourceTree = "<group>"; };
+		9103AB93AC8EB85AA8A2960BB119A5CA /* AKLogger-iOS8.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AKLogger-iOS8.0.xcconfig"; path = "../AKLogger-iOS8.0/AKLogger-iOS8.0.xcconfig"; sourceTree = "<group>"; };
+		9195DCFDC98E14C6BFF7E895E5837E46 /* LocalServerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalServerDelegate.swift; path = AKNetworking/Sources/Core/LocalServer/LocalServerDelegate.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98C5FD112074002FFEFF3E32426D878E /* DataCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataCache.swift; path = AKNetworking/Sources/Core/Cache/DataCache.swift; sourceTree = "<group>"; };
+		9A170C6D2530DE24B0B5FF5ACEFE67DE /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = AKLogger/Sources/Core/Logger.swift; sourceTree = "<group>"; };
+		9C0DC48529AC1406DDB54A7BEC208820 /* Pods-ISS-Passes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISS-Passes.release.xcconfig"; sourceTree = "<group>"; };
+		9FE4E28934709DC473D18E386FC9C535 /* String+Base64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Base64.swift"; path = "AKNetworking/Sources/Helpers/String+Base64.swift"; sourceTree = "<group>"; };
+		A0F6301D43BDA17AD5DE3B2F085E9F16 /* LoginTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginTextField.swift; path = AKLogin/Sources/Presentation/Interface/LoginTextField.swift; sourceTree = "<group>"; };
+		A1B17687CBBBECCFF9EC0CF0B3EB971B /* AKLogin-iOS8.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AKLogin-iOS8.0.xcconfig"; path = "../AKLogin-iOS8.0/AKLogin-iOS8.0.xcconfig"; sourceTree = "<group>"; };
+		A1D11510A53E9C5B4468067338584673 /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = he.lproj; path = AKLogin/Resources/Language/he.lproj; sourceTree = "<group>"; };
+		A29DF2135D5D150E0ABAF1B75F333724 /* Pods-ISS-PassesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ISS-PassesTests.modulemap"; sourceTree = "<group>"; };
+		A4934E8C005751CFEA80632E254375B9 /* BaseLoginViewController+SSO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BaseLoginViewController+SSO.swift"; path = "AKLogin/Sources/Presentation/Interface/BaseLoginViewController+SSO.swift"; sourceTree = "<group>"; };
+		A557E19D242801A6ED5053315AC46A9B /* UIImageView+ImageCaching.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+ImageCaching.swift"; path = "AKNetworking/Sources/Helpers/UIImageView+ImageCaching.swift"; sourceTree = "<group>"; };
+		A61A5F7AC6F31B69497454A576329491 /* Pods-ISS-PassesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISS-PassesUITests-dummy.m"; sourceTree = "<group>"; };
+		A68E894792C610D8DB314F33BF65E9B4 /* AKLogin-iOS11.2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKLogin-iOS11.2-umbrella.h"; sourceTree = "<group>"; };
+		A71A50F7C2EABBBDE21F6873C1EED785 /* MFLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MFLog.swift; path = AKLogin/Sources/Log/MFLog.swift; sourceTree = "<group>"; };
+		A71C6BA06018DEDB4D0580C2D8FABEE4 /* Global.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Global.swift; path = AKNetworking/Sources/Helpers/Global.swift; sourceTree = "<group>"; };
+		A764F08793CFE83C80A6081794E67FE6 /* AKLogin-iOS11.2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKLogin-iOS11.2-prefix.pch"; sourceTree = "<group>"; };
+		ABA7703424AA8DFB8E7D0AE8100D14F2 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "AKLogin/Resources/Language/zh-Hant.lproj"; sourceTree = "<group>"; };
+		ABA91E808BA306AE680CCC08DF7F1201 /* AKLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AKLogger.swift; path = AKLogger/Sources/Core/AKLogger.swift; sourceTree = "<group>"; };
+		ABC7ADBDB842CA9E5F03D84E0178BE7F /* LoggerConsole.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoggerConsole.swift; path = AKLogger/Sources/Core/LoggerConsole.swift; sourceTree = "<group>"; };
+		AC89394AE3E312F4891DCCE992C353C5 /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nb.lproj; path = AKLogin/Resources/Language/nb.lproj; sourceTree = "<group>"; };
+		AD80177844D3BD56F6FCD25166416820 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE9A2BD4FC3F5692C750479D8EDD06D0 /* ServerPolicyManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerPolicyManager.swift; path = AKNetworking/Sources/Core/Managers/ServerPolicyManager.swift; sourceTree = "<group>"; };
+		AF056F60F05F259FD25241978C682B78 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = AKLogin/Sources/Presentation/Interface/ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		B075268824E104449961ABB768D493BE /* Pods-ISS-PassesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISS-PassesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2A9948619B1F7E98BEDB83B46D91384 /* AKKeychain-iOS8.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AKKeychain-iOS8.0-umbrella.h"; path = "../AKKeychain-iOS8.0/AKKeychain-iOS8.0-umbrella.h"; sourceTree = "<group>"; };
+		B57A8E02999C31EFD1FF38E6C4A2D5E0 /* Pods-ISS-PassesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ISS-PassesTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA9AA795F4AC9F696CD1169BBB582877 /* Pods-ISS-PassesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISS-PassesTests.release.xcconfig"; sourceTree = "<group>"; };
+		BBA78268B8C4C0364C5B6C3903854A95 /* AKNetworking-iOS8.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AKNetworking-iOS8.0-dummy.m"; path = "../AKNetworking-iOS8.0/AKNetworking-iOS8.0-dummy.m"; sourceTree = "<group>"; };
+		C1D1DFFE6238E1E0C46325CC1CCC220D /* Pods-ISS-PassesTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISS-PassesTests-frameworks.sh"; sourceTree = "<group>"; };
+		C22B030EEF4CC1149EA5D6AD67F3C1E0 /* AKNetworking-iOS8.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AKNetworking-iOS8.0-umbrella.h"; path = "../AKNetworking-iOS8.0/AKNetworking-iOS8.0-umbrella.h"; sourceTree = "<group>"; };
+		C502E2CBA20B79F96482BD6284AACDA9 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = AKLogin/Resources/Language/es.lproj; sourceTree = "<group>"; };
+		C6DC6EBDDC97EB2ED37B4CD74B814E25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6E54FA9392AB3BBCACA36FB48C22304 /* Login.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Login.storyboard; path = AKLogin/Resources/Interfaces/Login.storyboard; sourceTree = "<group>"; };
+		C7C719B404D9CD3A5D08A47CE45259AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C7D0C2062B23080E5C2DDE82F4BF0992 /* Pods_ISS_PassesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ISS_PassesTests.framework; path = "Pods-ISS-PassesTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB069DB20888724DC2372B67F0334F29 /* AKNetworking-iOS8.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "AKNetworking-iOS8.0.modulemap"; path = "../AKNetworking-iOS8.0/AKNetworking-iOS8.0.modulemap"; sourceTree = "<group>"; };
+		CEB8DC9703077AD25E3C0D77C567E349 /* NSCacheBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSCacheBase.swift; path = AKNetworking/Sources/Core/Cache/NSCacheBase.swift; sourceTree = "<group>"; };
+		CF64873B0D762F221F2DA1DB21F35228 /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = sv.lproj; path = AKLogin/Resources/Language/sv.lproj; sourceTree = "<group>"; };
+		D008A435ADF987E8A5D497389933E6BC /* Pods-ISS-PassesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISS-PassesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D00C0EBEA36B6AAEE46DFAAE2669A15C /* AKLogger-iOS11.2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "AKLogger-iOS11.2.modulemap"; sourceTree = "<group>"; };
+		D048A7612C50CC76FB7D8274A64B1E34 /* Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = AKNetworking/Sources/Core/Managers/Enums.swift; sourceTree = "<group>"; };
+		D178FAFB2D828D4BDC1FA2A26390F248 /* AKLogger-iOS11.2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AKLogger-iOS11.2.xcconfig"; sourceTree = "<group>"; };
+		D43373B29EC36FD97EBA5C0C5B151375 /* Pods-ISS-PassesUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISS-PassesUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D621D84EDC011B66E8EF3688B11D5158 /* AKLogin-iOS11.2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "AKLogin-iOS11.2.modulemap"; sourceTree = "<group>"; };
+		D8FD818D6257EBBEFDDCE1A30F944AF3 /* AKLogger+Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AKLogger+Functions.swift"; path = "AKLogger/Sources/Core/AKLogger+Functions.swift"; sourceTree = "<group>"; };
+		D985C6BA4614E0C9B10F83D7DCB895E6 /* AKNetworking-iOS11.2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKNetworking-iOS11.2-prefix.pch"; sourceTree = "<group>"; };
+		D9918966B7A5BDAB5EE99AA4F8DAC179 /* AKKeychain-iOS11.2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKKeychain-iOS11.2-umbrella.h"; sourceTree = "<group>"; };
+		D9BF4527351180209AB8313B643127D4 /* el.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = el.lproj; path = AKLogin/Resources/Language/el.lproj; sourceTree = "<group>"; };
+		DAEFA1BF2D29C5DD631F840CFAD10431 /* AKLogin-iOS8.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AKLogin-iOS8.0-dummy.m"; path = "../AKLogin-iOS8.0/AKLogin-iOS8.0-dummy.m"; sourceTree = "<group>"; };
+		DC9F8F650E9DA02E3163D0DA39B3B55E /* JSON+Number.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JSON+Number.swift"; path = "AKNetworking/Sources/Core/Serializers/JSON+Number.swift"; sourceTree = "<group>"; };
+		DCFA77C7E1352FC8A0A151CDF134FCA6 /* MultiFactorAuthentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiFactorAuthentication.swift; path = AKLogin/Sources/Core/MultiFactorAuthentication.swift; sourceTree = "<group>"; };
+		DE189CBB8C4C47B7198E04269C062AB1 /* AKKeychain-iOS11.2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AKKeychain-iOS11.2.xcconfig"; sourceTree = "<group>"; };
+		DE2DEEDD10D747C3F0958C880324D705 /* AKKeychain-iOS11.2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKKeychain-iOS11.2-prefix.pch"; sourceTree = "<group>"; };
+		DF4B7DDE60ACCCE18B548CF18EF2E786 /* Pods-ISS-Passes-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISS-Passes-frameworks.sh"; sourceTree = "<group>"; };
+		E0404DCA5F81DF7540FABF58D5D8B61B /* Pods-ISS-Passes-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ISS-Passes-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E239E8C6DCD15BFA551E88515AAF2A6E /* CustomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomView.swift; path = AKLogin/Sources/Presentation/Interface/View/CustomView.swift; sourceTree = "<group>"; };
+		E3F4016B08EE75B04D59DE123835C004 /* AKRequestLogging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AKRequestLogging.swift; path = AKNetworking/Sources/Core/Logging/AKRequestLogging.swift; sourceTree = "<group>"; };
+		E52A8889DE30609725974A8847650E36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E644FF742E5141F6C0D078B5B6595A95 /* AKLogger-iOS8.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AKLogger-iOS8.0-dummy.m"; path = "../AKLogger-iOS8.0/AKLogger-iOS8.0-dummy.m"; sourceTree = "<group>"; };
+		E67A35A9E944F4FBD5E3DF67BE67690F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		E79126940C389FEE43B645610E3E3585 /* AKLogger-iOS8.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "AKLogger-iOS8.0.modulemap"; path = "../AKLogger-iOS8.0/AKLogger-iOS8.0.modulemap"; sourceTree = "<group>"; };
+		E7F5B5A4014392150FCDC667399F1FB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../AKLogger-iOS8.0/Info.plist"; sourceTree = "<group>"; };
+		E80BE52AD56A4E5C7FB79C3AB994A7A0 /* AKNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AKNetworking.framework; path = "AKNetworking-iOS8.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83C974C28471EA585BAA50B61236A89 /* Pods-ISS-PassesUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ISS-PassesUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EC68F1C524BC8FD726089437A9A3442F /* AKLogger-iOS8.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AKLogger-iOS8.0-prefix.pch"; path = "../AKLogger-iOS8.0/AKLogger-iOS8.0-prefix.pch"; sourceTree = "<group>"; };
+		EDCF9EAA15BCFCC30AA6A92322C9CF7E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2E818369F415915FA89AB29609DC7AA /* LoginButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginButton.swift; path = AKLogin/Sources/Presentation/Interface/LoginButton.swift; sourceTree = "<group>"; };
+		F36F2CC99CB3D5FB8B1EC68458DC3978 /* AKLogin-iOS8.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AKLogin-iOS8.0-prefix.pch"; path = "../AKLogin-iOS8.0/AKLogin-iOS8.0-prefix.pch"; sourceTree = "<group>"; };
+		F678540E2B19243FC539201BE6CA010B /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = AKNetworking/Sources/Core/Serializers/Request.swift; sourceTree = "<group>"; };
+		F770D15517411AABF4D61A1E2413BE59 /* AKNetworking-iOS8.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AKNetworking-iOS8.0-prefix.pch"; path = "../AKNetworking-iOS8.0/AKNetworking-iOS8.0-prefix.pch"; sourceTree = "<group>"; };
+		FAD99536F3AA279660CB573BBFF58BDD /* AKLogin-iOS8.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "AKLogin-iOS8.0.modulemap"; path = "../AKLogin-iOS8.0/AKLogin-iOS8.0.modulemap"; sourceTree = "<group>"; };
+		FBBCE81BEECBC21B4E99937CDB62AA7B /* et.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = et.lproj; path = AKLogin/Resources/Language/et.lproj; sourceTree = "<group>"; };
+		FE1A46827F3ACC86E471369E4859D9D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		FF1057353F95A821060A7ED5D587DEAF /* BridingHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BridingHeader.h; path = AKLogger/Sources/Core/BridingHeader.h; sourceTree = "<group>"; };
+		FF22114031395F23FC6F31887B65C0A5 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = AKLogin/Resources/Language/ja.lproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E8D87AE8CC0E8820D7C41BA52842D1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514CE8CC9B884769592A8C97E812EB3D /* AKKeychain.framework in Frameworks */,
+				4D6D457F5C273326936D4D730A4E14CD /* CoreGraphics.framework in Frameworks */,
+				580EAA6DD50A2ED3D0428CC489496C4D /* Foundation.framework in Frameworks */,
+				34C84A584447F4AC4B01C435935F0736 /* QuartzCore.framework in Frameworks */,
+				16CA61E71413E23DA155073BE1B8A819 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F31F6931C281A76A38AD454DD9E6742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39ECA150A78F4C52ED97E7EA5D2DD07F /* Foundation.framework in Frameworks */,
+				F50441C75AF3658984526C54D4E14388 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B6E795F15BAAA0F04886C1A2EF9B51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333E8C6EC7F5B69B2FE5B5DE497B5685 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1412A78DCC502DFE30F6AC21ED12DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3572E0991AFE6444902694172D7CCFFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F94F545F2A7EFFD5E58F128CF786844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9562287339F067E1E32E173DE4F30A36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B2B0AD5AB34504A256E5261A2BFB516 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD9AEAEC10A8FF9F7C38B1CE26AB538 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97950A8ACEE699BB6A772E8C34E28399 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76C8F1BC587F93E82DD7252EC5CB4A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB048A40F3167E97C190DFB7704399DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFD637E102365563BDC6AD0718015AD /* Foundation.framework in Frameworks */,
+				1919AE6CA7B4B165C613C2C7AEC90BED /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0951F6FB9DD16F6C74D71024F108FE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A474BBDAA55FE3AA141B18C3B6564642 /* Foundation.framework in Frameworks */,
+				C545483566C4E717208CDD12435AB3A5 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC1413314A94A5FAD777EB94538C7374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0328C32A3712C41EE803A6A6342401EB /* Foundation.framework in Frameworks */,
+				40B783EE682865CCD22950C9454EBD51 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB6440FF9D9BC1F631DBCCAE971455B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F07A8B1757C7F4200360E00AC4FE61 /* AKKeychain.framework in Frameworks */,
+				EF1743C1A61AA3E73BA199537F9FC259 /* CoreGraphics.framework in Frameworks */,
+				652CAB1DD10ED8D77B8DF4AF7BBEEF26 /* Foundation.framework in Frameworks */,
+				7448D8E89FD6834130491CF357084FAC /* QuartzCore.framework in Frameworks */,
+				9B20C65D851E9EA056C66C2EDCA13EAB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08641385670E3DB32E132B432F183ED5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20B9AFC8865CF4EFFDA690D94EE604A0 /* Pods-ISS-Passes */,
+				E765E0AC0BFF2C0C493766316B76C19B /* Pods-ISS-PassesTests */,
+				16D413F4CF1C94B18988B672F937C1F9 /* Pods-ISS-PassesUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		16D413F4CF1C94B18988B672F937C1F9 /* Pods-ISS-PassesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD80177844D3BD56F6FCD25166416820 /* Info.plist */,
+				2C0450CEA326DA3A184E767446DA4903 /* Pods-ISS-PassesUITests.modulemap */,
+				058D927EC971241BD576B2B35101D792 /* Pods-ISS-PassesUITests-acknowledgements.markdown */,
+				E83C974C28471EA585BAA50B61236A89 /* Pods-ISS-PassesUITests-acknowledgements.plist */,
+				A61A5F7AC6F31B69497454A576329491 /* Pods-ISS-PassesUITests-dummy.m */,
+				D43373B29EC36FD97EBA5C0C5B151375 /* Pods-ISS-PassesUITests-frameworks.sh */,
+				54FB269E2CD44717406F93587D262B62 /* Pods-ISS-PassesUITests-resources.sh */,
+				6CE3AF2FD450100F5E2AB896F41B7F19 /* Pods-ISS-PassesUITests-umbrella.h */,
+				D008A435ADF987E8A5D497389933E6BC /* Pods-ISS-PassesUITests.debug.xcconfig */,
+				7E98AAB99AB97152726519D2F2F43153 /* Pods-ISS-PassesUITests.release.xcconfig */,
+			);
+			name = "Pods-ISS-PassesUITests";
+			path = "Target Support Files/Pods-ISS-PassesUITests";
+			sourceTree = "<group>";
+		};
+		20B9AFC8865CF4EFFDA690D94EE604A0 /* Pods-ISS-Passes */ = {
+			isa = PBXGroup;
+			children = (
+				545B978EDC360769097B4952E4112781 /* Info.plist */,
+				3E83D08375EAA05F63A7DAD783798D3F /* Pods-ISS-Passes.modulemap */,
+				E0404DCA5F81DF7540FABF58D5D8B61B /* Pods-ISS-Passes-acknowledgements.markdown */,
+				32E6CB58AA79DF61DB33F8BA4FB5BB22 /* Pods-ISS-Passes-acknowledgements.plist */,
+				23325CD2B64BCAEA27602972D8F730CB /* Pods-ISS-Passes-dummy.m */,
+				DF4B7DDE60ACCCE18B548CF18EF2E786 /* Pods-ISS-Passes-frameworks.sh */,
+				25384277036203574B6A8A90445CBBC1 /* Pods-ISS-Passes-resources.sh */,
+				1E1EA9A995EE5774DE165795766F194A /* Pods-ISS-Passes-umbrella.h */,
+				014823821289CB7BFA4DFB5CD5F111B7 /* Pods-ISS-Passes.debug.xcconfig */,
+				9C0DC48529AC1406DDB54A7BEC208820 /* Pods-ISS-Passes.release.xcconfig */,
+			);
+			name = "Pods-ISS-Passes";
+			path = "Target Support Files/Pods-ISS-Passes";
+			sourceTree = "<group>";
+		};
+		31D71E413B46E9034D75116BA36C30C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB168F3F6D9F75F1484CD01BCD66CEEF /* AKKeychain */,
+				F0B18DD8E2C4D4B88AB88CCCA98741C9 /* AKLogger */,
+				6AFF0601723E30C15766094D792A8E74 /* AKLogin */,
+				F86A977141119C1E99E8E70B94AD2041 /* AKNetworking */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6AFF0601723E30C15766094D792A8E74 /* AKLogin */ = {
+			isa = PBXGroup;
+			children = (
+				6FE79696857293EC7A8BAE01CDA0527E /* AKLogin.h */,
+				5FE123FE3CB5D99D5C12EE91D51B141E /* BaseLoginViewController.swift */,
+				A4934E8C005751CFEA80632E254375B9 /* BaseLoginViewController+SSO.swift */,
+				0A8C88A03C0565CF9CB9428DDA2FB8E8 /* BoxView.swift */,
+				58C6B6E264824A3B2F4040E47CCF95CD /* Constants.swift */,
+				E239E8C6DCD15BFA551E88515AAF2A6E /* CustomView.swift */,
+				AF056F60F05F259FD25241978C682B78 /* ForgotPasswordViewController.swift */,
+				F2E818369F415915FA89AB29609DC7AA /* LoginButton.swift */,
+				A0F6301D43BDA17AD5DE3B2F085E9F16 /* LoginTextField.swift */,
+				260E7FCA1B0AE86A9DFB7D1EECA5B27F /* LoginViewController.swift */,
+				3F5F6EC728D540451957F8513B61AF7B /* LoginViewControllerExtension.swift */,
+				A71A50F7C2EABBBDE21F6873C1EED785 /* MFLog.swift */,
+				2C05D66AC7AC90CC147680E5A4DACE71 /* MobileFirstLoginViewController.swift */,
+				DCFA77C7E1352FC8A0A151CDF134FCA6 /* MultiFactorAuthentication.swift */,
+				929151FE7C8F5902C2A3066C575198A8 /* Resources */,
+				9C188E81FE898304EA761D63AB1244BF /* Support Files */,
+			);
+			name = AKLogin;
+			path = AKLogin;
+			sourceTree = "<group>";
+		};
+		77AEE4DEB46A1994E15DA83F9B9D61B0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E67A35A9E944F4FBD5E3DF67BE67690F /* CoreGraphics.framework */,
+				C7C719B404D9CD3A5D08A47CE45259AB /* Foundation.framework */,
+				FE1A46827F3ACC86E471369E4859D9D6 /* QuartzCore.framework */,
+				4D713078A46E98F047B30907C3212F18 /* Security.framework */,
+				E52A8889DE30609725974A8847650E36 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				A3C94FD241B18DC8A4460C3E923F8946 /* Frameworks */,
+				31D71E413B46E9034D75116BA36C30C6 /* Pods */,
+				D6D74A2A326AB70D44CFC779600F480F /* Products */,
+				08641385670E3DB32E132B432F183ED5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8FC3A79B7D5B69C0CFFDBFBFEF449CA1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4913B608FC48120F0E44203E9C07BD3D /* AKNetworking-iOS11.2.modulemap */,
+				06CBC2B58F898DF1FA00D9D3BBEAA275 /* AKNetworking-iOS11.2.xcconfig */,
+				03CDE095130E3D75D36E6DBF4DAAC7A3 /* AKNetworking-iOS11.2-dummy.m */,
+				D985C6BA4614E0C9B10F83D7DCB895E6 /* AKNetworking-iOS11.2-prefix.pch */,
+				390AEB20EA6759031AAB0F4FCA0C83ED /* AKNetworking-iOS11.2-umbrella.h */,
+				CB069DB20888724DC2372B67F0334F29 /* AKNetworking-iOS8.0.modulemap */,
+				54B380D83AC4299B556635C091FB0CEA /* AKNetworking-iOS8.0.xcconfig */,
+				BBA78268B8C4C0364C5B6C3903854A95 /* AKNetworking-iOS8.0-dummy.m */,
+				F770D15517411AABF4D61A1E2413BE59 /* AKNetworking-iOS8.0-prefix.pch */,
+				C22B030EEF4CC1149EA5D6AD67F3C1E0 /* AKNetworking-iOS8.0-umbrella.h */,
+				52927ED4F33BD8E12F27172D38970FC9 /* Info.plist */,
+				0304EFBD1718B219B78663359A81BC3C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AKNetworking-iOS11.2";
+			sourceTree = "<group>";
+		};
+		929151FE7C8F5902C2A3066C575198A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B8D7C9EA0FF75D92F97482493EA124B /* be.lproj */,
+				066BF24403BC76BA7A4710081A86D660 /* bg.lproj */,
+				51399306B6A72B115E2026189992F3B4 /* cs.lproj */,
+				207379D4CBD280F07867CEB6E37DAC71 /* da.lproj */,
+				792D78872A2CE69931777491AF7F2611 /* de.lproj */,
+				D9BF4527351180209AB8313B643127D4 /* el.lproj */,
+				50828C59FAAE488D7A1EFD8A00BB9321 /* en.lproj */,
+				C502E2CBA20B79F96482BD6284AACDA9 /* es.lproj */,
+				FBBCE81BEECBC21B4E99937CDB62AA7B /* et.lproj */,
+				4EA8BDBAC0F3A15B296B5414C0807038 /* fi.lproj */,
+				12C4C425E068E11F739CAE09A0BAB8D2 /* fr.lproj */,
+				A1D11510A53E9C5B4468067338584673 /* he.lproj */,
+				6D16B54419875AF95C6252E4EC43A9CA /* Images.xcassets */,
+				1C4D4C5A5220C5726A8A7002CF967801 /* it.lproj */,
+				FF22114031395F23FC6F31887B65C0A5 /* ja.lproj */,
+				3CBED3079B55FA0A7056D8113F47901A /* ko.lproj */,
+				C6E54FA9392AB3BBCACA36FB48C22304 /* Login.storyboard */,
+				AC89394AE3E312F4891DCCE992C353C5 /* nb.lproj */,
+				2247D57712ACE899B0745FC95DD87D18 /* nl.lproj */,
+				7A1BC7A8F91C08A630EB22A93414D567 /* pl.lproj */,
+				5A9C06D4AFBB4BE4193FC8AD09582D57 /* pt.lproj */,
+				5DB5952BEE594F5A957EF3292A928334 /* ro.lproj */,
+				4003D2DC0590FB53C4A4CC5D0C11CE74 /* ru.lproj */,
+				444E35D5B62C13D9D920A95C1D1E8864 /* sk.lproj */,
+				CF64873B0D762F221F2DA1DB21F35228 /* sv.lproj */,
+				5849F907CA48559981A30A2E62BAB5FD /* uk.lproj */,
+				6806F6302A3C26B405ECD4DA5614CD6F /* zh.lproj */,
+				2995F55AB3B512887038924304F92058 /* zh-Hans.lproj */,
+				ABA7703424AA8DFB8E7D0AE8100D14F2 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9C188E81FE898304EA761D63AB1244BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D621D84EDC011B66E8EF3688B11D5158 /* AKLogin-iOS11.2.modulemap */,
+				7D233DE4B8E0594EA611C3C1C0EA3CE9 /* AKLogin-iOS11.2.xcconfig */,
+				61446212FD06052325712B39499D3EE5 /* AKLogin-iOS11.2-dummy.m */,
+				A764F08793CFE83C80A6081794E67FE6 /* AKLogin-iOS11.2-prefix.pch */,
+				A68E894792C610D8DB314F33BF65E9B4 /* AKLogin-iOS11.2-umbrella.h */,
+				FAD99536F3AA279660CB573BBFF58BDD /* AKLogin-iOS8.0.modulemap */,
+				A1B17687CBBBECCFF9EC0CF0B3EB971B /* AKLogin-iOS8.0.xcconfig */,
+				DAEFA1BF2D29C5DD631F840CFAD10431 /* AKLogin-iOS8.0-dummy.m */,
+				F36F2CC99CB3D5FB8B1EC68458DC3978 /* AKLogin-iOS8.0-prefix.pch */,
+				6BA2876E872C08A28D5E45CE892B7B10 /* AKLogin-iOS8.0-umbrella.h */,
+				8B5D8A5208ECFF596EC2CE4AA229C741 /* Info.plist */,
+				64386393F7491FB0B269849D52E2B5DA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AKLogin-iOS11.2";
+			sourceTree = "<group>";
+		};
+		A3C94FD241B18DC8A4460C3E923F8946 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5108998925770D3C627003BB1B96392D /* AKKeychain.framework */,
+				77AEE4DEB46A1994E15DA83F9B9D61B0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5811F3664FE6F9ED60E4BAF3434CB10 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				37E8D9EB30DB78B3DE80A7E77B2BD23F /* AKKeychain-iOS11.2.modulemap */,
+				DE189CBB8C4C47B7198E04269C062AB1 /* AKKeychain-iOS11.2.xcconfig */,
+				319D79AD0FDB8B2BB545669D0421364A /* AKKeychain-iOS11.2-dummy.m */,
+				DE2DEEDD10D747C3F0958C880324D705 /* AKKeychain-iOS11.2-prefix.pch */,
+				D9918966B7A5BDAB5EE99AA4F8DAC179 /* AKKeychain-iOS11.2-umbrella.h */,
+				0C2D5DCAB581690E7D170498312191B8 /* AKKeychain-iOS8.0.modulemap */,
+				5E537F19CE9468768030F0F321EA4CEF /* AKKeychain-iOS8.0.xcconfig */,
+				6980EC2CEB2F17B16E0C889D0E40D3F1 /* AKKeychain-iOS8.0-dummy.m */,
+				36085F05CABA2D7B4C23B1D36DEFD941 /* AKKeychain-iOS8.0-prefix.pch */,
+				B2A9948619B1F7E98BEDB83B46D91384 /* AKKeychain-iOS8.0-umbrella.h */,
+				497B829D10FF11471817EB10A5F3352F /* Info.plist */,
+				C6DC6EBDDC97EB2ED37B4CD74B814E25 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AKKeychain-iOS11.2";
+			sourceTree = "<group>";
+		};
+		CA846A94A24D6B0413D8081A263BCA57 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D00C0EBEA36B6AAEE46DFAAE2669A15C /* AKLogger-iOS11.2.modulemap */,
+				D178FAFB2D828D4BDC1FA2A26390F248 /* AKLogger-iOS11.2.xcconfig */,
+				6B14BC2F8B470AA15CB8382149F0447D /* AKLogger-iOS11.2-dummy.m */,
+				7BE9506565887F0F2B52D009C45DBB70 /* AKLogger-iOS11.2-prefix.pch */,
+				8927F7E78CC7DC520D3EE134A4F7DED1 /* AKLogger-iOS11.2-umbrella.h */,
+				E79126940C389FEE43B645610E3E3585 /* AKLogger-iOS8.0.modulemap */,
+				9103AB93AC8EB85AA8A2960BB119A5CA /* AKLogger-iOS8.0.xcconfig */,
+				E644FF742E5141F6C0D078B5B6595A95 /* AKLogger-iOS8.0-dummy.m */,
+				EC68F1C524BC8FD726089437A9A3442F /* AKLogger-iOS8.0-prefix.pch */,
+				260C4B4948665370F7E8515D3E7FC790 /* AKLogger-iOS8.0-umbrella.h */,
+				E7F5B5A4014392150FCDC667399F1FB4 /* Info.plist */,
+				025A7F0AB5032BA788EE01E4431583B6 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AKLogger-iOS11.2";
+			sourceTree = "<group>";
+		};
+		CB168F3F6D9F75F1484CD01BCD66CEEF /* AKKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				26ADF8FC96428EC00BA70E8FF62BAB83 /* Keychain.swift */,
+				8FD941076463229BA9EE9F29240AA5DF /* SSO.swift */,
+				B5811F3664FE6F9ED60E4BAF3434CB10 /* Support Files */,
+			);
+			name = AKKeychain;
+			path = AKKeychain;
+			sourceTree = "<group>";
+		};
+		D6D74A2A326AB70D44CFC779600F480F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D832FB8D5B2DE683540D54CEB7750B3 /* AKKeychain.framework */,
+				3CE695BE9B7E7337E1226B538FE4C523 /* AKKeychain.framework */,
+				8AA6A1C581351340B1BFDEBDD65966E1 /* AKLogger.framework */,
+				568E8F93E093B644AA65FEB51968E199 /* AKLogger.framework */,
+				139440F7379AB172A6647134D0C2D752 /* AKLogin.framework */,
+				33A6E48E9D8FDC406C56EF57167FBA55 /* AKLogin.framework */,
+				357DFABE5EE07E2E056FF69709D2A320 /* AKNetworking.framework */,
+				E80BE52AD56A4E5C7FB79C3AB994A7A0 /* AKNetworking.framework */,
+				0005363AA43DC1C5B482614478A2728B /* Pods_ISS_Passes.framework */,
+				C7D0C2062B23080E5C2DDE82F4BF0992 /* Pods_ISS_PassesTests.framework */,
+				249116EAC503587B7B09062CC8AE3610 /* Pods_ISS_PassesUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E765E0AC0BFF2C0C493766316B76C19B /* Pods-ISS-PassesTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDCF9EAA15BCFCC30AA6A92322C9CF7E /* Info.plist */,
+				A29DF2135D5D150E0ABAF1B75F333724 /* Pods-ISS-PassesTests.modulemap */,
+				29526CCF2D955F6F8B636C5B71450016 /* Pods-ISS-PassesTests-acknowledgements.markdown */,
+				B57A8E02999C31EFD1FF38E6C4A2D5E0 /* Pods-ISS-PassesTests-acknowledgements.plist */,
+				34E1AAA6E7E58206DB85D614B7895416 /* Pods-ISS-PassesTests-dummy.m */,
+				C1D1DFFE6238E1E0C46325CC1CCC220D /* Pods-ISS-PassesTests-frameworks.sh */,
+				2C028684648F636C684C62F4D6FC540D /* Pods-ISS-PassesTests-resources.sh */,
+				608E20980EE50DBA992343E4AE27A30E /* Pods-ISS-PassesTests-umbrella.h */,
+				B075268824E104449961ABB768D493BE /* Pods-ISS-PassesTests.debug.xcconfig */,
+				BA9AA795F4AC9F696CD1169BBB582877 /* Pods-ISS-PassesTests.release.xcconfig */,
+			);
+			name = "Pods-ISS-PassesTests";
+			path = "Target Support Files/Pods-ISS-PassesTests";
+			sourceTree = "<group>";
+		};
+		F0B18DD8E2C4D4B88AB88CCCA98741C9 /* AKLogger */ = {
+			isa = PBXGroup;
+			children = (
+				22D96CC935811B2110491F821331AF1F /* AKLogger.h */,
+				ABA91E808BA306AE680CCC08DF7F1201 /* AKLogger.swift */,
+				D8FD818D6257EBBEFDDCE1A30F944AF3 /* AKLogger+Functions.swift */,
+				FF1057353F95A821060A7ED5D587DEAF /* BridingHeader.h */,
+				9A170C6D2530DE24B0B5FF5ACEFE67DE /* Logger.swift */,
+				1FC40E56335A59F257F6439ECA55B630 /* LoggerASL.swift */,
+				ABC7ADBDB842CA9E5F03D84E0178BE7F /* LoggerConsole.swift */,
+				579F0C8C2CD9A631DA9E2E0EF16A7784 /* LoggerFile.swift */,
+				7E894B3500B0E852147B45746FA0F692 /* LoggerFile+Read+Delete.swift */,
+				CA846A94A24D6B0413D8081A263BCA57 /* Support Files */,
+			);
+			name = AKLogger;
+			path = AKLogger;
+			sourceTree = "<group>";
+		};
+		F86A977141119C1E99E8E70B94AD2041 /* AKNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				3997CEE622247EB51FDF05CBE4EA2C50 /* AKReachability.swift */,
+				E3F4016B08EE75B04D59DE123835C004 /* AKRequestLogging.swift */,
+				0ABB392AD7265989C4E2C2F7FA744646 /* AKRequestLogging+ServerLog.swift */,
+				115B1973832540ED66DF185A03BF3D2D /* CacheManager.swift */,
+				98C5FD112074002FFEFF3E32426D878E /* DataCache.swift */,
+				3E16FD7448A0967250AEEA70CD8FB2E4 /* DataSourceManager.swift */,
+				1440DB057683EAA70C4C2715E8235ECF /* DataSourceManager+Extensions.swift */,
+				D048A7612C50CC76FB7D8274A64B1E34 /* Enums.swift */,
+				A71C6BA06018DEDB4D0580C2D8FABEE4 /* Global.swift */,
+				2A718AD716D3BD7F8B10C48EA9FB6C55 /* JSON.swift */,
+				8460236C71934DF32EE3EF08E57F48A2 /* JSON+Date.swift */,
+				DC9F8F650E9DA02E3163D0DA39B3B55E /* JSON+Number.swift */,
+				80548B8DB7E532412A81613F53B382E4 /* JSON+Others.swift */,
+				7B22A8B5AC9D6C03FE28D943D79B4032 /* LocalServer.swift */,
+				9195DCFDC98E14C6BFF7E895E5837E46 /* LocalServerDelegate.swift */,
+				CEB8DC9703077AD25E3C0D77C567E349 /* NSCacheBase.swift */,
+				F678540E2B19243FC539201BE6CA010B /* Request.swift */,
+				890079F0FDC026C580BACA53216E4E4F /* RequestDelegate.swift */,
+				34B6002AB60A585D38395268E9A3DD3E /* Response.swift */,
+				5E5B82CC3A1B0E3A90553EBCAE205F9C /* ResponseValidator.swift */,
+				AE9A2BD4FC3F5692C750479D8EDD06D0 /* ServerPolicyManager.swift */,
+				1275AB5168ABAEF7741B8D7DD3EBAFE1 /* SessionManager.swift */,
+				05AEDA8FE6C1B4FF926517C9F0226318 /* SessionManager+Multipart.swift */,
+				215E3735D2B30CFCEC19B05743BEDC76 /* SessionManagerDelegate.swift */,
+				9FE4E28934709DC473D18E386FC9C535 /* String+Base64.swift */,
+				368888F37AFECCBB2E8FEEEF97D4C749 /* StubURLHTTPProtocol.swift */,
+				A557E19D242801A6ED5053315AC46A9B /* UIImageView+ImageCaching.swift */,
+				8FC3A79B7D5B69C0CFFDBFBFEF449CA1 /* Support Files */,
+			);
+			name = AKNetworking;
+			path = AKNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0053E56EFAE7C708F937266979981130 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F3D616AF5DE53DEE2B08A3FC69A048 /* Pods-ISS-PassesUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00925CBFAED72DD3C165A996F43298D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D25D1BA238C773FEC5016165C15FC8 /* AKLogger-iOS8.0-umbrella.h in Headers */,
+				8F583A6533B3F070322032A6BF845859 /* AKLogger.h in Headers */,
+				93BD21E3C94074D6600CE6DFF146B58E /* BridingHeader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B1107D4B35B13DCAEB76A2AEBBACA99 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA07C9F111F2374EC694E63BFFE6C59 /* AKLogin-iOS8.0-umbrella.h in Headers */,
+				7AE58F2B85137EA6513038C7635F7BA0 /* AKLogin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49AFB0F8DA6DB02F1E131E8EC05CF75A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				698B8F34E36BE26BEC830E07C599B556 /* AKLogin-iOS11.2-umbrella.h in Headers */,
+				1F8E669988F89A3F8EFE9E27644BFFD7 /* AKLogin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53ED5ED222C553940FE12C8F7CE857AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A8C3F50B6997D7338897A0D1A7B5CB /* AKKeychain-iOS8.0-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		564548CEE3885C0AFDBA7D9DCBBE8A25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1915D4DD174B539369C962FBF83446 /* Pods-ISS-PassesTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD7B556D3BB67B1AA5DD3F8015C4DF50 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19C05C1D2CC3483E267F8FC79BFFEF9 /* Pods-ISS-Passes-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D607ED9D620C7F81224ED8966326A4CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38EA96FA0D7C3012CDBEDD62AC5813A1 /* AKKeychain-iOS11.2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E055ADF99E7501075F72DD74C8EACEB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F98818EC12234CF357659F3EAF47A7 /* AKNetworking-iOS8.0-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D09DC8F7231DED0B9F3D259FDB47D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE9A340FA352A48141456E3E1DF929FD /* AKLogger-iOS11.2-umbrella.h in Headers */,
+				F7838B04A9658ED9FAA8899EFDD7132C /* AKLogger.h in Headers */,
+				C376992D685CFB6FC48D2DFA7FDDE8A8 /* BridingHeader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEED7DD911E4DC36F8CCB0A90E596B3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D090D68AFACE6CA4C4E2A49F2BCE72 /* AKNetworking-iOS11.2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4BDADC65B4FCA310D4E39969DD9B9B5B /* AKNetworking-iOS11.2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74E019E8D172287E1F64CBD20E579C8A /* Build configuration list for PBXNativeTarget "AKNetworking-iOS11.2" */;
+			buildPhases = (
+				248EB3FE496E65FEC0253BCF15BF4493 /* Sources */,
+				6F94F545F2A7EFFD5E58F128CF786844 /* Frameworks */,
+				EEED7DD911E4DC36F8CCB0A90E596B3C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AKNetworking-iOS11.2";
+			productName = "AKNetworking-iOS11.2";
+			productReference = 357DFABE5EE07E2E056FF69709D2A320 /* AKNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D0691D1C90F8A24BBC30A9ABDA62193 /* AKKeychain-iOS11.2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F614CFB6672CCCA43C367EE16DAE98D5 /* Build configuration list for PBXNativeTarget "AKKeychain-iOS11.2" */;
+			buildPhases = (
+				979C2D6DDBAF2150798E307E48D691AD /* Sources */,
+				4F31F6931C281A76A38AD454DD9E6742 /* Frameworks */,
+				D607ED9D620C7F81224ED8966326A4CB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AKKeychain-iOS11.2";
+			productName = "AKKeychain-iOS11.2";
+			productReference = 0D832FB8D5B2DE683540D54CEB7750B3 /* AKKeychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		53CC93B2B7E38C2458FF921E2D56E07B /* AKLogger-iOS11.2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 258768C0F00B8E28FC424815405C3242 /* Build configuration list for PBXNativeTarget "AKLogger-iOS11.2" */;
+			buildPhases = (
+				ED60C775A7A7CDD8A2365E3A009109C5 /* Sources */,
+				DB048A40F3167E97C190DFB7704399DD /* Frameworks */,
+				E9D09DC8F7231DED0B9F3D259FDB47D8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AKLogger-iOS11.2";
+			productName = "AKLogger-iOS11.2";
+			productReference = 8AA6A1C581351340B1BFDEBDD65966E1 /* AKLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		58A757F1F9D9796A184CC5E11AF1F6DF /* Pods-ISS-Passes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F24236DCEF5BE01E52E3F3A2688E091E /* Build configuration list for PBXNativeTarget "Pods-ISS-Passes" */;
+			buildPhases = (
+				535786EB3052AB8FB70DFE54EF67BD2C /* Sources */,
+				97950A8ACEE699BB6A772E8C34E28399 /* Frameworks */,
+				AD7B556D3BB67B1AA5DD3F8015C4DF50 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				873DFE0E59A869BD63AEF432C9390867 /* PBXTargetDependency */,
+				79C889A0348CE4C7F78436075D74B3A3 /* PBXTargetDependency */,
+				6B7CB8C182D909D30BE3BDFFD77288B6 /* PBXTargetDependency */,
+				721A56E6BF7414B8E00809E54425E369 /* PBXTargetDependency */,
+			);
+			name = "Pods-ISS-Passes";
+			productName = "Pods-ISS-Passes";
+			productReference = 0005363AA43DC1C5B482614478A2728B /* Pods_ISS_Passes.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		58AFC5673581B01DD22F26DD378F3E43 /* AKLogger-iOS8.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B078BBD1A0AF2E52412961F7FF60D67 /* Build configuration list for PBXNativeTarget "AKLogger-iOS8.0" */;
+			buildPhases = (
+				59BCCCBDDE16B6BC22DB39C5066D66B0 /* Sources */,
+				EC1413314A94A5FAD777EB94538C7374 /* Frameworks */,
+				00925CBFAED72DD3C165A996F43298D9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AKLogger-iOS8.0";
+			productName = "AKLogger-iOS8.0";
+			productReference = 568E8F93E093B644AA65FEB51968E199 /* AKLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5F58C8EFA2617B727C45DC725B377DEB /* AKLogin-iOS11.2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5794CE8A913B03012DE6ECBD71AB4193 /* Build configuration list for PBXNativeTarget "AKLogin-iOS11.2" */;
+			buildPhases = (
+				DAEF3640D98D2C0B8962A539CDBFEDFC /* Sources */,
+				0E8D87AE8CC0E8820D7C41BA52842D1D /* Frameworks */,
+				49AFB0F8DA6DB02F1E131E8EC05CF75A /* Headers */,
+				A1532F3CFB51C3C5B63D88AEF137A7E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6807F727BAD300882DBD190CAB3A18A4 /* PBXTargetDependency */,
+			);
+			name = "AKLogin-iOS11.2";
+			productName = "AKLogin-iOS11.2";
+			productReference = 139440F7379AB172A6647134D0C2D752 /* AKLogin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C072DC72F6CC094ED35D9B7545211AE6 /* AKLogin-iOS8.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3BD970FF58AA95BAA93A2C092F5900F /* Build configuration list for PBXNativeTarget "AKLogin-iOS8.0" */;
+			buildPhases = (
+				E1A45902764210A384A5A291457C5FF0 /* Sources */,
+				FB6440FF9D9BC1F631DBCCAE971455B3 /* Frameworks */,
+				2B1107D4B35B13DCAEB76A2AEBBACA99 /* Headers */,
+				CD5A969ADD51835D61E453B1C2E829F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D29CB53E64150A0E34F77CD5A86EBA33 /* PBXTargetDependency */,
+			);
+			name = "AKLogin-iOS8.0";
+			productName = "AKLogin-iOS8.0";
+			productReference = 33A6E48E9D8FDC406C56EF57167FBA55 /* AKLogin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C677B909B7BED515E09EDFF1694576E4 /* Pods-ISS-PassesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF72D688F902ABA26A6585DA3ED7B2FE /* Build configuration list for PBXNativeTarget "Pods-ISS-PassesUITests" */;
+			buildPhases = (
+				2041C44BC886E5C2DDF37C8EDA791B38 /* Sources */,
+				52B6E795F15BAAA0F04886C1A2EF9B51 /* Frameworks */,
+				0053E56EFAE7C708F937266979981130 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB11AC712AF3A9CF636B19EBF5F2E3DF /* PBXTargetDependency */,
+				D02527A77DE2687FD1A39F5D178E315E /* PBXTargetDependency */,
+				8115EA15EB31D61BFB4CC5D95C53586A /* PBXTargetDependency */,
+				383E733BF9C564DAAA9B78C79CF9581E /* PBXTargetDependency */,
+			);
+			name = "Pods-ISS-PassesUITests";
+			productName = "Pods-ISS-PassesUITests";
+			productReference = 249116EAC503587B7B09062CC8AE3610 /* Pods_ISS_PassesUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D433CD9694E2866A682E59918ADCDF55 /* AKKeychain-iOS8.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EBE443D97473C089834BAD428E802FB /* Build configuration list for PBXNativeTarget "AKKeychain-iOS8.0" */;
+			buildPhases = (
+				8D45E431985C63ADA6D4FAC9DAB15D18 /* Sources */,
+				E0951F6FB9DD16F6C74D71024F108FE3 /* Frameworks */,
+				53ED5ED222C553940FE12C8F7CE857AA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AKKeychain-iOS8.0";
+			productName = "AKKeychain-iOS8.0";
+			productReference = 3CE695BE9B7E7337E1226B538FE4C523 /* AKKeychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1DAE1A7ADAA8FFF26A0EAB4C8C0B6CA /* AKNetworking-iOS8.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4A6A2FE6DF1F3A25BFE6CF0EDDD17E /* Build configuration list for PBXNativeTarget "AKNetworking-iOS8.0" */;
+			buildPhases = (
+				D9D9A89F2135658D387AF88E72614E00 /* Sources */,
+				5B1412A78DCC502DFE30F6AC21ED12DB /* Frameworks */,
+				E055ADF99E7501075F72DD74C8EACEB0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AKNetworking-iOS8.0";
+			productName = "AKNetworking-iOS8.0";
+			productReference = E80BE52AD56A4E5C7FB79C3AB994A7A0 /* AKNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F6CC08E3954A1212701D86FF9F2FD528 /* Pods-ISS-PassesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4B5C9350D69ACA85C0E7769E49C0F1E /* Build configuration list for PBXNativeTarget "Pods-ISS-PassesTests" */;
+			buildPhases = (
+				C91EC841B120DB18C4370FC99F4EB33B /* Sources */,
+				7B2B0AD5AB34504A256E5261A2BFB516 /* Frameworks */,
+				564548CEE3885C0AFDBA7D9DCBBE8A25 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AB13C9B3421767BEAD8F53300177613 /* PBXTargetDependency */,
+				E130111330B98C79271D644961C3B8E3 /* PBXTargetDependency */,
+				45F624D0CF69F3A8A5D2E7D41965C938 /* PBXTargetDependency */,
+				EA54DECDF9D832E4E4A3433484B07C35 /* PBXTargetDependency */,
+			);
+			name = "Pods-ISS-PassesTests";
+			productName = "Pods-ISS-PassesTests";
+			productReference = C7D0C2062B23080E5C2DDE82F4BF0992 /* Pods_ISS_PassesTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D6D74A2A326AB70D44CFC779600F480F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D0691D1C90F8A24BBC30A9ABDA62193 /* AKKeychain-iOS11.2 */,
+				D433CD9694E2866A682E59918ADCDF55 /* AKKeychain-iOS8.0 */,
+				53CC93B2B7E38C2458FF921E2D56E07B /* AKLogger-iOS11.2 */,
+				58AFC5673581B01DD22F26DD378F3E43 /* AKLogger-iOS8.0 */,
+				5F58C8EFA2617B727C45DC725B377DEB /* AKLogin-iOS11.2 */,
+				C072DC72F6CC094ED35D9B7545211AE6 /* AKLogin-iOS8.0 */,
+				4BDADC65B4FCA310D4E39969DD9B9B5B /* AKNetworking-iOS11.2 */,
+				F1DAE1A7ADAA8FFF26A0EAB4C8C0B6CA /* AKNetworking-iOS8.0 */,
+				58A757F1F9D9796A184CC5E11AF1F6DF /* Pods-ISS-Passes */,
+				F6CC08E3954A1212701D86FF9F2FD528 /* Pods-ISS-PassesTests */,
+				C677B909B7BED515E09EDFF1694576E4 /* Pods-ISS-PassesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1532F3CFB51C3C5B63D88AEF137A7E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EC47822225C67DBB3B092C8616EBFB /* be.lproj in Resources */,
+				4BCF5962495DB6EEA8DCED7799585464 /* bg.lproj in Resources */,
+				D11AD76638B8F05AB46BD5002059873F /* cs.lproj in Resources */,
+				B54F08E9F4871F5AB2BA8D0710EB5925 /* da.lproj in Resources */,
+				EB4FDEE87EFCEE7D400B59984E7D44A4 /* de.lproj in Resources */,
+				AC54C368BB899C6F7FE340C7996BA30F /* el.lproj in Resources */,
+				53D4E6AD30EF7D1CDEBC0621DCEFE1B1 /* en.lproj in Resources */,
+				10773080038F7C9206CAFFCD2BBBF49C /* es.lproj in Resources */,
+				BF00DA392EACE0CA914F09CC79E36D22 /* et.lproj in Resources */,
+				FF8D4AFEDCBCEF6DC99E8AA52054AED9 /* fi.lproj in Resources */,
+				9EA0E13B0EC549442E666754B59D5C40 /* fr.lproj in Resources */,
+				03A239EFBFFA137788E43100D40486F6 /* he.lproj in Resources */,
+				24092CFD55531B2B95DEDF32224718AB /* Images.xcassets in Resources */,
+				5A98D8DA41571A8FE52AB1EB0AD402D4 /* it.lproj in Resources */,
+				C3C3F6BD303E3BAA92160509CD474875 /* ja.lproj in Resources */,
+				C4C7EF39E64F0B24387551CFC4004273 /* ko.lproj in Resources */,
+				7D65A48518171D9DEF0ABFEA2AE016E9 /* Login.storyboard in Resources */,
+				1A296E56F1550ED716998D67376E4E5F /* nb.lproj in Resources */,
+				ECE4E316CC5D28BABE56B79B8CAB11F0 /* nl.lproj in Resources */,
+				DFA6EE4AFC8C240D2E1320C5622999CF /* pl.lproj in Resources */,
+				56BDCF4E0DD1575F0F42D0A282DB9A6C /* pt.lproj in Resources */,
+				70B7703C1080F4D88362423050694F9D /* ro.lproj in Resources */,
+				4CC914E8E6FBB162C29FEBE4F5BA9BA0 /* ru.lproj in Resources */,
+				EBFCEDB23C89D1650BFCFEE6AC555B8C /* sk.lproj in Resources */,
+				687DE0584115B179363F313C7158965B /* sv.lproj in Resources */,
+				53B909CF7449CEFF12210B423E189802 /* uk.lproj in Resources */,
+				165201974EED4B86A24DCC26A0D49E67 /* zh-Hans.lproj in Resources */,
+				A68353E37559A672D47565F6251B53CD /* zh-Hant.lproj in Resources */,
+				A4BA4575866BB2267A14AB299F1091C5 /* zh.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5A969ADD51835D61E453B1C2E829F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEAFA541FE3538467FA51326ECA8E02 /* be.lproj in Resources */,
+				95405279AD5D56EF8EB82479E0C2D08E /* bg.lproj in Resources */,
+				52AB40ACFFA5A53D3DF5F6791497EC2F /* cs.lproj in Resources */,
+				147A946F36DF8F3D2E84908351552EAE /* da.lproj in Resources */,
+				D678678A3C27FB9198733FC95652286F /* de.lproj in Resources */,
+				C9436B37A21A8606943B3093063E798B /* el.lproj in Resources */,
+				D172B38776B53C1D5659AB36BCE8722B /* en.lproj in Resources */,
+				9B013084425AF22260EA68C3CC91F1CC /* es.lproj in Resources */,
+				5BD7E2D0A90451B566B51D8ED4F5DE1C /* et.lproj in Resources */,
+				14737A5B9DADDC3270C121EBD3C994CB /* fi.lproj in Resources */,
+				F5C73C5F41C2412264BF61BE5A382EE8 /* fr.lproj in Resources */,
+				9AC9A83054EC2CEA7EEC93D14D6D2344 /* he.lproj in Resources */,
+				55B53B63FBB33B079DD66A7C64B02530 /* Images.xcassets in Resources */,
+				9BADE875B55EF9A8DCDFA9605B34ADD6 /* it.lproj in Resources */,
+				E71FE3DF330E12F56165D2F65B3E1F97 /* ja.lproj in Resources */,
+				F0EA287C7FE6851D7AA45092D38FC6A9 /* ko.lproj in Resources */,
+				B7C0A55106986F89F4E46C07D241CDED /* Login.storyboard in Resources */,
+				CB763BB9EDE6D679727BF75069D7D2D4 /* nb.lproj in Resources */,
+				124D11CFD092C4A9F451B23C95132DCA /* nl.lproj in Resources */,
+				BE62AECD3B6433ACE234336EED7C6E76 /* pl.lproj in Resources */,
+				A17671EC8E48899DA39013D2A48EF489 /* pt.lproj in Resources */,
+				D0000C4A9F9A654D5E30A66964EA58DD /* ro.lproj in Resources */,
+				3ED5F43A65388398891BCAD950246C17 /* ru.lproj in Resources */,
+				E4F96BD35152161B5238703ACF226733 /* sk.lproj in Resources */,
+				5DD2B41883C93252FAE6681E6474072A /* sv.lproj in Resources */,
+				EED3060D1BBD2E49A3AD79E86A667FE3 /* uk.lproj in Resources */,
+				4A93B2E47838071B399B86BD12A77390 /* zh-Hans.lproj in Resources */,
+				621457ABF3C590891542085CF87AA4DC /* zh-Hant.lproj in Resources */,
+				2DF695797AEF47BDD1A571A5CEBBBACF /* zh.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2041C44BC886E5C2DDF37C8EDA791B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF189101F997EFAA741ED9D0244592C /* Pods-ISS-PassesUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248EB3FE496E65FEC0253BCF15BF4493 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4591622FF958C6DFC530406080D5E45F /* AKNetworking-iOS11.2-dummy.m in Sources */,
+				5F4ADD5367B9240B36244C9A8C2D595A /* AKReachability.swift in Sources */,
+				3E1B155365878ADD8D7956F3DE2075A7 /* AKRequestLogging+ServerLog.swift in Sources */,
+				2DE0D9E5CF259006087376C48EF16EF5 /* AKRequestLogging.swift in Sources */,
+				32DCCD7AB2CCC2B7513301ADFC12B9BC /* CacheManager.swift in Sources */,
+				20F4407ACE69DF058CD4EDEB82043C5B /* DataCache.swift in Sources */,
+				416795DD5FB0A63A334C022727AA9961 /* DataSourceManager+Extensions.swift in Sources */,
+				6BE50351D633ABE622F7A1313937A629 /* DataSourceManager.swift in Sources */,
+				7E85666AC97F3B3F7D9E61311DD3CC85 /* Enums.swift in Sources */,
+				255593B452528A00E40CD6D149A6139F /* Global.swift in Sources */,
+				68D45042D409C6FE5E433860D96E048A /* JSON+Date.swift in Sources */,
+				0973A2C744168CF656A45D6106CC3FAB /* JSON+Number.swift in Sources */,
+				9C7B42C4191E9B62A821994ECF598CAD /* JSON+Others.swift in Sources */,
+				2C155A91D7C450F2FD18ABCE9F05A20E /* JSON.swift in Sources */,
+				5181AB49998FB766919EBF8D8354A110 /* LocalServer.swift in Sources */,
+				BCA527E3488C7EB611E176C6DBD10B2C /* LocalServerDelegate.swift in Sources */,
+				D227344954509A276EAF4794EDE93BF6 /* NSCacheBase.swift in Sources */,
+				5267124C89F205875588DCF9758E749F /* Request.swift in Sources */,
+				D96AD07783B03CC1D7C3AE43CC76C596 /* RequestDelegate.swift in Sources */,
+				36CCAFEBDFB4E7AADE69B3F364A6880B /* Response.swift in Sources */,
+				A32CB2AB18C2520D95D53A06684B6CA1 /* ResponseValidator.swift in Sources */,
+				43D5111E07DFF4121E9FB2997B510A68 /* ServerPolicyManager.swift in Sources */,
+				9113231DFEC863E937F96F95E32ABCF1 /* SessionManager+Multipart.swift in Sources */,
+				706F7EF726D8AEED577ACD8FC9D2AB5B /* SessionManager.swift in Sources */,
+				97998AED02C41AC1111581BBBBF8F5AA /* SessionManagerDelegate.swift in Sources */,
+				85F0A440E9B2D25952B9D9A1AFFB4258 /* String+Base64.swift in Sources */,
+				CF451B31DD277733848CC3210113671F /* StubURLHTTPProtocol.swift in Sources */,
+				79361B5A9CF0A84BFA1252F1CCD089B6 /* UIImageView+ImageCaching.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		535786EB3052AB8FB70DFE54EF67BD2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404E5F93B486AAB79011A6764AF511CA /* Pods-ISS-Passes-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59BCCCBDDE16B6BC22DB39C5066D66B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE6D54D28FAAEFAD65CA0DA1DFB6C54 /* AKLogger+Functions.swift in Sources */,
+				DEF066BAC5D5A76DA3CD84F0D64A637B /* AKLogger-iOS8.0-dummy.m in Sources */,
+				70AD6A2E3EF5B5D1E942464CC2C378FC /* AKLogger.swift in Sources */,
+				858761F56B284DFF3304FA91A077662B /* Logger.swift in Sources */,
+				7076344636E7536813A6A5E4AF2D04E5 /* LoggerASL.swift in Sources */,
+				712AEBAB2775C0E6AE86475423EDE880 /* LoggerConsole.swift in Sources */,
+				65BF8FD790302AAA620CBC29B490A623 /* LoggerFile+Read+Delete.swift in Sources */,
+				F91B722A0A4AB7316AD7A8CE68586CDC /* LoggerFile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D45E431985C63ADA6D4FAC9DAB15D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C09C8F3F3CB1557E4FE55093512581 /* AKKeychain-iOS8.0-dummy.m in Sources */,
+				76DE9C3317B4A0E63A4080D4472F733B /* Keychain.swift in Sources */,
+				7B610E4C21878D03E88FF27F877BCB98 /* SSO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		979C2D6DDBAF2150798E307E48D691AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1850CB801CF3DA61D8C6B6C0AFF7611C /* AKKeychain-iOS11.2-dummy.m in Sources */,
+				126A4AF2BAE8CE32F2F74FEB65DEE59B /* Keychain.swift in Sources */,
+				E5EB63A026AA6F96014C4F9E3BD63AE8 /* SSO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91EC841B120DB18C4370FC99F4EB33B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3D5A998B336D0F5832F8B408CAF55F0 /* Pods-ISS-PassesTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D9A89F2135658D387AF88E72614E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697F57055823B9D506DFA4DCBA5DE646 /* AKNetworking-iOS8.0-dummy.m in Sources */,
+				E159513D807B37E897719E958F55F21F /* AKReachability.swift in Sources */,
+				9F9EF6AAEACE066E1B05E3CF3A243188 /* AKRequestLogging+ServerLog.swift in Sources */,
+				9988541BF662F1F1A25A2182A20FCCE1 /* AKRequestLogging.swift in Sources */,
+				DC84E7CA9113B31189E0F2FB867A9ADA /* CacheManager.swift in Sources */,
+				2361159FA379BABC68B01321C4351088 /* DataCache.swift in Sources */,
+				C56A196F3D3B43FBFDF7201DE287A675 /* DataSourceManager+Extensions.swift in Sources */,
+				17D431BB70F6013F01D93844E8889855 /* DataSourceManager.swift in Sources */,
+				6FDB7A8B48CB75C6B0A8578E8C2FFE20 /* Enums.swift in Sources */,
+				057A2405D3DB9B9BB428227EF8551465 /* Global.swift in Sources */,
+				94C30A1F3807CD8ACA3B032A1D7DE682 /* JSON+Date.swift in Sources */,
+				076D921962C52535E1CE38A57F541D98 /* JSON+Number.swift in Sources */,
+				B13395331CD2D55D983E108DFB302009 /* JSON+Others.swift in Sources */,
+				247006935E44A4C5FE00D2A79BC179FF /* JSON.swift in Sources */,
+				1FE55E2960725AEF8F7D950487D6339A /* LocalServer.swift in Sources */,
+				8565E1D7D62F0CE4D3A61BBF7864961B /* LocalServerDelegate.swift in Sources */,
+				6D89FCA40F62A1AF9F7F4112193A6F30 /* NSCacheBase.swift in Sources */,
+				15C1AD723D973D992489727E72564AF4 /* Request.swift in Sources */,
+				6A5CF1EA1080105824CCD8CC8A263E09 /* RequestDelegate.swift in Sources */,
+				4B2D94FCEC4514F16329040C5E1731E1 /* Response.swift in Sources */,
+				5EBC3F4C25C0B2D7DB227E4632FBC82A /* ResponseValidator.swift in Sources */,
+				6B3DA1498056B2BBE209495515266D93 /* ServerPolicyManager.swift in Sources */,
+				CFA012EE9FBEFE9C6D727D1D2D076D9D /* SessionManager+Multipart.swift in Sources */,
+				05E1284F784C94C054B481E49EB2D63E /* SessionManager.swift in Sources */,
+				7A8EF78066DD8F0CB35E00B83CAA42B4 /* SessionManagerDelegate.swift in Sources */,
+				E9AB026EA04218A691A4260450293D4B /* String+Base64.swift in Sources */,
+				46AA07BE6215C5DD12CE597A66AD40CD /* StubURLHTTPProtocol.swift in Sources */,
+				4BC7E1292D2805A003ACE5A771464FD6 /* UIImageView+ImageCaching.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAEF3640D98D2C0B8962A539CDBFEDFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8EBDB82FBAC999B5E85E432425B212 /* AKLogin-iOS11.2-dummy.m in Sources */,
+				55E65F9A730BC09F45D7CDC9CA9A8859 /* BaseLoginViewController+SSO.swift in Sources */,
+				946A7D58D20C02387807BAE17AEF5570 /* BaseLoginViewController.swift in Sources */,
+				B89E0FA7925BDCE60643B895437E6A40 /* BoxView.swift in Sources */,
+				496152CD85DD23876ADE9D0A4FDACDF2 /* Constants.swift in Sources */,
+				5BA575327D6FBE20362FCCFE02F50BE5 /* CustomView.swift in Sources */,
+				5C7DD20765F5D1C228A994E29193EEBE /* ForgotPasswordViewController.swift in Sources */,
+				BFC449E1E5A6C397D6725EB70B8783DB /* LoginButton.swift in Sources */,
+				BE640025E0C743E97FF67DA92943FA49 /* LoginTextField.swift in Sources */,
+				C57078E19278BB61BC4E2220342EF28D /* LoginViewController.swift in Sources */,
+				6B71114660CAE365B537B15CFE84EE35 /* LoginViewControllerExtension.swift in Sources */,
+				A587449E6B00EFE7D60EA4BB113D38AC /* MFLog.swift in Sources */,
+				D1931C4BF0A9B65886830A4A08181321 /* MobileFirstLoginViewController.swift in Sources */,
+				4997A88D8E54157228BDEA4AF5B82E06 /* MultiFactorAuthentication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A45902764210A384A5A291457C5FF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81659E280B3B07B06C47450D72B04FB7 /* AKLogin-iOS8.0-dummy.m in Sources */,
+				3948F1736E05B168F1EAB5BB5A19FD58 /* BaseLoginViewController+SSO.swift in Sources */,
+				28A6716D59118FFEF526E3C8387BE866 /* BaseLoginViewController.swift in Sources */,
+				435766547EEE0A5F6A6EB67902FBA32A /* BoxView.swift in Sources */,
+				07F4DDD8825D8734E2A2814629D3F072 /* Constants.swift in Sources */,
+				D7ED62DDBE6D275E79F3257A84AE6C55 /* CustomView.swift in Sources */,
+				34419EF2607940E13AA544BA051483B7 /* ForgotPasswordViewController.swift in Sources */,
+				EF720C6C95359D215D6F90CFF45CAEBE /* LoginButton.swift in Sources */,
+				A7A13DC406F0C77F281BBA79CA868F9C /* LoginTextField.swift in Sources */,
+				6D344C1E9A9DE4450513D31E3388C4A4 /* LoginViewController.swift in Sources */,
+				80D62BE5AD6912C55260D3CC0A9BA23B /* LoginViewControllerExtension.swift in Sources */,
+				0D68865C38663584EB4C9CA593447F62 /* MFLog.swift in Sources */,
+				B6D050CD59103C992762BFED47588FD7 /* MobileFirstLoginViewController.swift in Sources */,
+				23EE6C3C0434D1C48F5457CB0300A71D /* MultiFactorAuthentication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED60C775A7A7CDD8A2365E3A009109C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD637D83E4483118F2F2B572FE1F3A80 /* AKLogger+Functions.swift in Sources */,
+				44CCD2FD467CB907EC2DA82F0A1744FB /* AKLogger-iOS11.2-dummy.m in Sources */,
+				2C50D189C4EBEF02C5789C22766FD186 /* AKLogger.swift in Sources */,
+				C40C328D57D9679AA203B348D9A23961 /* Logger.swift in Sources */,
+				F1F972EACFE1E613A8F16B196739FF25 /* LoggerASL.swift in Sources */,
+				29CDC5ED25BF880D54426AFAA2C983D7 /* LoggerConsole.swift in Sources */,
+				7D2D27A1F6A5854990609194C6B718E9 /* LoggerFile+Read+Delete.swift in Sources */,
+				CE9CF30329044E9B0A4B8876764C3852 /* LoggerFile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		383E733BF9C564DAAA9B78C79CF9581E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKNetworking-iOS11.2";
+			target = 4BDADC65B4FCA310D4E39969DD9B9B5B /* AKNetworking-iOS11.2 */;
+			targetProxy = 182DEF4698EC2AFA6C5E767B30C744E4 /* PBXContainerItemProxy */;
+		};
+		45F624D0CF69F3A8A5D2E7D41965C938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKLogin-iOS11.2";
+			target = 5F58C8EFA2617B727C45DC725B377DEB /* AKLogin-iOS11.2 */;
+			targetProxy = 7DABEC4735FE204F6A492138E275F0C6 /* PBXContainerItemProxy */;
+		};
+		6807F727BAD300882DBD190CAB3A18A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKKeychain-iOS8.0";
+			target = D433CD9694E2866A682E59918ADCDF55 /* AKKeychain-iOS8.0 */;
+			targetProxy = C9DE5A8EF78781CBA71D587D2BAC9287 /* PBXContainerItemProxy */;
+		};
+		6B7CB8C182D909D30BE3BDFFD77288B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKLogin-iOS8.0";
+			target = C072DC72F6CC094ED35D9B7545211AE6 /* AKLogin-iOS8.0 */;
+			targetProxy = D94C65D6CDB4079E1EB4719E1BC0AB8B /* PBXContainerItemProxy */;
+		};
+		721A56E6BF7414B8E00809E54425E369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKNetworking-iOS8.0";
+			target = F1DAE1A7ADAA8FFF26A0EAB4C8C0B6CA /* AKNetworking-iOS8.0 */;
+			targetProxy = 30E4EBFA09F5F397778944DA49250253 /* PBXContainerItemProxy */;
+		};
+		79C889A0348CE4C7F78436075D74B3A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKLogger-iOS8.0";
+			target = 58AFC5673581B01DD22F26DD378F3E43 /* AKLogger-iOS8.0 */;
+			targetProxy = 32E4CC954FC537116ACD76226BD759B4 /* PBXContainerItemProxy */;
+		};
+		8115EA15EB31D61BFB4CC5D95C53586A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKLogin-iOS11.2";
+			target = 5F58C8EFA2617B727C45DC725B377DEB /* AKLogin-iOS11.2 */;
+			targetProxy = A431F8A3F3F383132A8059DE5FD57C58 /* PBXContainerItemProxy */;
+		};
+		873DFE0E59A869BD63AEF432C9390867 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKKeychain-iOS8.0";
+			target = D433CD9694E2866A682E59918ADCDF55 /* AKKeychain-iOS8.0 */;
+			targetProxy = B9D79B3B1DF9D69BAFF216F7342C72D4 /* PBXContainerItemProxy */;
+		};
+		8AB13C9B3421767BEAD8F53300177613 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKKeychain-iOS11.2";
+			target = 4D0691D1C90F8A24BBC30A9ABDA62193 /* AKKeychain-iOS11.2 */;
+			targetProxy = 1E499A7D4F62CCA05D06994CE08FB75C /* PBXContainerItemProxy */;
+		};
+		AB11AC712AF3A9CF636B19EBF5F2E3DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKKeychain-iOS11.2";
+			target = 4D0691D1C90F8A24BBC30A9ABDA62193 /* AKKeychain-iOS11.2 */;
+			targetProxy = 9512A1E9AD5EF9A35929611E766E5455 /* PBXContainerItemProxy */;
+		};
+		D02527A77DE2687FD1A39F5D178E315E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKLogger-iOS11.2";
+			target = 53CC93B2B7E38C2458FF921E2D56E07B /* AKLogger-iOS11.2 */;
+			targetProxy = EAB0481F5E0EF3C9E6A92587A49EE833 /* PBXContainerItemProxy */;
+		};
+		D29CB53E64150A0E34F77CD5A86EBA33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKKeychain-iOS8.0";
+			target = D433CD9694E2866A682E59918ADCDF55 /* AKKeychain-iOS8.0 */;
+			targetProxy = 4254C3F3B9D9B0D39E7ED237E276BD6C /* PBXContainerItemProxy */;
+		};
+		E130111330B98C79271D644961C3B8E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKLogger-iOS11.2";
+			target = 53CC93B2B7E38C2458FF921E2D56E07B /* AKLogger-iOS11.2 */;
+			targetProxy = 53169CF4160E35623DC47BFC5EA9C902 /* PBXContainerItemProxy */;
+		};
+		EA54DECDF9D832E4E4A3433484B07C35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AKNetworking-iOS11.2";
+			target = 4BDADC65B4FCA310D4E39969DD9B9B5B /* AKNetworking-iOS11.2 */;
+			targetProxy = 96FEA18588D53C1E3D6248238E5052F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A467E6B1CB77AD98B394E969CBE022F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D178FAFB2D828D4BDC1FA2A26390F248 /* AKLogger-iOS11.2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKLogger-iOS11.2/AKLogger-iOS11.2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKLogger-iOS11.2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKLogger-iOS11.2/AKLogger-iOS11.2.modulemap";
+				PRODUCT_NAME = AKLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0D346D83D4AAE698D62BC6C30089DAC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B380D83AC4299B556635C091FB0CEA /* AKNetworking-iOS8.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKNetworking-iOS8.0/AKNetworking-iOS8.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKNetworking-iOS8.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKNetworking-iOS8.0/AKNetworking-iOS8.0.modulemap";
+				PRODUCT_NAME = AKNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18369C98A2D3F6B827A9F02E7D926042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B075268824E104449961ABB768D493BE /* Pods-ISS-PassesTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ISS-PassesTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ISS-PassesTests/Pods-ISS-PassesTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ISS_PassesTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		340CE2B149E396F3E89D4138C4847801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE189CBB8C4C47B7198E04269C062AB1 /* AKKeychain-iOS11.2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKKeychain-iOS11.2/AKKeychain-iOS11.2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKKeychain-iOS11.2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKKeychain-iOS11.2/AKKeychain-iOS11.2.modulemap";
+				PRODUCT_NAME = AKKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3BB4DAAC3BC762DD9FA043042972B9DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9103AB93AC8EB85AA8A2960BB119A5CA /* AKLogger-iOS8.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKLogger-iOS8.0/AKLogger-iOS8.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKLogger-iOS8.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKLogger-iOS8.0/AKLogger-iOS8.0.modulemap";
+				PRODUCT_NAME = AKLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		409F0F6E94558C93C237A0D61F8EA930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B17687CBBBECCFF9EC0CF0B3EB971B /* AKLogin-iOS8.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKLogin-iOS8.0/AKLogin-iOS8.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKLogin-iOS8.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKLogin-iOS8.0/AKLogin-iOS8.0.modulemap";
+				PRODUCT_NAME = AKLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		445F9C2288B3224491688D8C873736C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D233DE4B8E0594EA611C3C1C0EA3CE9 /* AKLogin-iOS11.2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKLogin-iOS11.2/AKLogin-iOS11.2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKLogin-iOS11.2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKLogin-iOS11.2/AKLogin-iOS11.2.modulemap";
+				PRODUCT_NAME = AKLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		58E9E0030D68C23A18CD0737F88AA906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B17687CBBBECCFF9EC0CF0B3EB971B /* AKLogin-iOS8.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKLogin-iOS8.0/AKLogin-iOS8.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKLogin-iOS8.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKLogin-iOS8.0/AKLogin-iOS8.0.modulemap";
+				PRODUCT_NAME = AKLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60B7BB7F2DB60F0AD4D8D19D347156A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E537F19CE9468768030F0F321EA4CEF /* AKKeychain-iOS8.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKKeychain-iOS8.0/AKKeychain-iOS8.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKKeychain-iOS8.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKKeychain-iOS8.0/AKKeychain-iOS8.0.modulemap";
+				PRODUCT_NAME = AKKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		784413D4DF01EF5456BA9E157494EEBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9103AB93AC8EB85AA8A2960BB119A5CA /* AKLogger-iOS8.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKLogger-iOS8.0/AKLogger-iOS8.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKLogger-iOS8.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKLogger-iOS8.0/AKLogger-iOS8.0.modulemap";
+				PRODUCT_NAME = AKLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E61FCCD7345CE7576EDFD5B3D55ECB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D233DE4B8E0594EA611C3C1C0EA3CE9 /* AKLogin-iOS11.2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKLogin-iOS11.2/AKLogin-iOS11.2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKLogin-iOS11.2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKLogin-iOS11.2/AKLogin-iOS11.2.modulemap";
+				PRODUCT_NAME = AKLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8AAD30B8BCA284C421C0DE7708061737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D178FAFB2D828D4BDC1FA2A26390F248 /* AKLogger-iOS11.2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKLogger-iOS11.2/AKLogger-iOS11.2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKLogger-iOS11.2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKLogger-iOS11.2/AKLogger-iOS11.2.modulemap";
+				PRODUCT_NAME = AKLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B3CD3AB6A9B993005624510BDCC7190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06CBC2B58F898DF1FA00D9D3BBEAA275 /* AKNetworking-iOS11.2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKNetworking-iOS11.2/AKNetworking-iOS11.2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKNetworking-iOS11.2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKNetworking-iOS11.2/AKNetworking-iOS11.2.modulemap";
+				PRODUCT_NAME = AKNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B82F99BB4912B05EAA549BD15FC31561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E98AAB99AB97152726519D2F2F43153 /* Pods-ISS-PassesUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ISS-PassesUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ISS-PassesUITests/Pods-ISS-PassesUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ISS_PassesUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA6B90F48D7E7649EB8EFDCB22D70839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA9AA795F4AC9F696CD1169BBB582877 /* Pods-ISS-PassesTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ISS-PassesTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ISS-PassesTests/Pods-ISS-PassesTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ISS_PassesTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BACAE45817A24D29D9A6679BF570C0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D008A435ADF987E8A5D497389933E6BC /* Pods-ISS-PassesUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ISS-PassesUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ISS-PassesUITests/Pods-ISS-PassesUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ISS_PassesUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE88E650541263EDFDF155291E72824E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 014823821289CB7BFA4DFB5CD5F111B7 /* Pods-ISS-Passes.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ISS-Passes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ISS-Passes/Pods-ISS-Passes.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ISS_Passes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D977055157082AA795A47ABBE61AC62A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06CBC2B58F898DF1FA00D9D3BBEAA275 /* AKNetworking-iOS11.2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKNetworking-iOS11.2/AKNetworking-iOS11.2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKNetworking-iOS11.2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKNetworking-iOS11.2/AKNetworking-iOS11.2.modulemap";
+				PRODUCT_NAME = AKNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EFD907E2AC6EE368A3F15B67EC00880E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE189CBB8C4C47B7198E04269C062AB1 /* AKKeychain-iOS11.2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKKeychain-iOS11.2/AKKeychain-iOS11.2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKKeychain-iOS11.2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKKeychain-iOS11.2/AKKeychain-iOS11.2.modulemap";
+				PRODUCT_NAME = AKKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1D06F645EACEB9EF8B86D9515470E16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E537F19CE9468768030F0F321EA4CEF /* AKKeychain-iOS8.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKKeychain-iOS8.0/AKKeychain-iOS8.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKKeychain-iOS8.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKKeychain-iOS8.0/AKKeychain-iOS8.0.modulemap";
+				PRODUCT_NAME = AKKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FBE51E755EE4AB67A8C2E4BA9A23F90B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C0DC48529AC1406DDB54A7BEC208820 /* Pods-ISS-Passes.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ISS-Passes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ISS-Passes/Pods-ISS-Passes.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ISS_Passes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD759A9727D8400B0805BDF796596997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B380D83AC4299B556635C091FB0CEA /* AKNetworking-iOS8.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKNetworking-iOS8.0/AKNetworking-iOS8.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKNetworking-iOS8.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKNetworking-iOS8.0/AKNetworking-iOS8.0.modulemap";
+				PRODUCT_NAME = AKNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		258768C0F00B8E28FC424815405C3242 /* Build configuration list for PBXNativeTarget "AKLogger-iOS11.2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A467E6B1CB77AD98B394E969CBE022F /* Debug */,
+				8AAD30B8BCA284C421C0DE7708061737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
+				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5794CE8A913B03012DE6ECBD71AB4193 /* Build configuration list for PBXNativeTarget "AKLogin-iOS11.2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E61FCCD7345CE7576EDFD5B3D55ECB3 /* Debug */,
+				445F9C2288B3224491688D8C873736C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74E019E8D172287E1F64CBD20E579C8A /* Build configuration list for PBXNativeTarget "AKNetworking-iOS11.2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3CD3AB6A9B993005624510BDCC7190 /* Debug */,
+				D977055157082AA795A47ABBE61AC62A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B078BBD1A0AF2E52412961F7FF60D67 /* Build configuration list for PBXNativeTarget "AKLogger-iOS8.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784413D4DF01EF5456BA9E157494EEBD /* Debug */,
+				3BB4DAAC3BC762DD9FA043042972B9DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EBE443D97473C089834BAD428E802FB /* Build configuration list for PBXNativeTarget "AKKeychain-iOS8.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B7BB7F2DB60F0AD4D8D19D347156A3 /* Debug */,
+				F1D06F645EACEB9EF8B86D9515470E16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4B5C9350D69ACA85C0E7769E49C0F1E /* Build configuration list for PBXNativeTarget "Pods-ISS-PassesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18369C98A2D3F6B827A9F02E7D926042 /* Debug */,
+				BA6B90F48D7E7649EB8EFDCB22D70839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA4A6A2FE6DF1F3A25BFE6CF0EDDD17E /* Build configuration list for PBXNativeTarget "AKNetworking-iOS8.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D346D83D4AAE698D62BC6C30089DAC0 /* Debug */,
+				FD759A9727D8400B0805BDF796596997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3BD970FF58AA95BAA93A2C092F5900F /* Build configuration list for PBXNativeTarget "AKLogin-iOS8.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58E9E0030D68C23A18CD0737F88AA906 /* Debug */,
+				409F0F6E94558C93C237A0D61F8EA930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF72D688F902ABA26A6585DA3ED7B2FE /* Build configuration list for PBXNativeTarget "Pods-ISS-PassesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACAE45817A24D29D9A6679BF570C0B2 /* Debug */,
+				B82F99BB4912B05EAA549BD15FC31561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F24236DCEF5BE01E52E3F3A2688E091E /* Build configuration list for PBXNativeTarget "Pods-ISS-Passes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE88E650541263EDFDF155291E72824E /* Debug */,
+				FBE51E755EE4AB67A8C2E4BA9A23F90B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F614CFB6672CCCA43C367EE16DAE98D5 /* Build configuration list for PBXNativeTarget "AKKeychain-iOS11.2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340CE2B149E396F3E89D4138C4847801 /* Debug */,
+				EFD907E2AC6EE368A3F15B67EC00880E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

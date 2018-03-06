@@ -1,0 +1,92 @@
+/* An email has been sent to you, containing your password */
+"An email has been sent to you, containing your password" = "Se le ha enviado un mensaje de correo electrónico que contiene la contraseña";
+
+/* Are you sure you want to log out? */
+"Are you sure you want to log out?" = "¿Seguro que desea finalizar la sesión?";
+
+/* Authentication Failed */
+"Authentication Failed" = "Error de autenticación";
+
+/* Cancel */
+"Cancel" = "Cancelar";
+
+/* (No Commment) */
+"Error" = "Error";
+
+/* (No Commment) */
+"Welcome" = "Bienvenida";
+
+/* (No Commment) */
+"Local Authentication not available" = "Autenticación local no disponible";
+
+/* Login details required */
+"Login details required" = "Los detalles de inicio de sesión son obligatorios";
+
+/* Make sure you have entered a user name */
+"Make sure you have entered a user name" = "Asegúrese de que especificó un nombre de usuario";
+
+/* Make sure you have entered a user name and password */
+"Make sure you have entered a user name and password" = "Asegúrese de que especificó un nombre de usuario y una contraseña";
+
+/* No login details have been stored for your fingerprint yet. Please enter your details in the login screen. */
+"No login details have been stored for your fingerprint yet. Please enter your details in the login screen." = "Todavía no se han almacenado detalles de inicio de sesión para su huella dactilar. Especifique los detalles en la pantalla de inicio de sesión.";
+
+/* OK */
+"OK" = "Aceptar";
+
+/* (No Commment) */
+"Passcode has not been set on this device" = "No se estableció un código de acceso en este dispositivo";
+
+/* (No Commment) */
+"Please authenticate in order to proceed" = "Autentíquese para continuar";
+
+/* Sorry, this functionality has not been implemented */
+"Sorry, this functionality has not been implemented" = "Lo sentimos, esta funcionalidad no está implementada";
+
+/* System Cancelled */
+"System Cancelled" = "Cancelado por el sistema";
+
+/* (No Commment) */
+"Touch ID has not been configured on this device" = "Touch ID no se configuró en este dispositivo";
+
+/* (No Commment) */
+"Touch ID is not supported by this device" = "Touch ID no está soportado en este dispositivo";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "No se puede autenticar";
+
+/* Unsuccessful */
+"Unsuccessful" = "Incorrecto";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "escanee la huella dactilar para iniciar sesión";
+
+/* Enter Username and Password */
+"Enter Username and Password" = "entre nombre de usuario y contraseñá";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Touch ID no está disponible";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "Touch ID no está registrado";
+
+/* User name */
+"User name" = "Nombre del usuario";
+
+/* Password */
+"Password" = "Contraseña";
+
+/* Sign in */
+"Log in" = "Iniciar sesión";
+
+/* heading text */
+"headingText" = "Nombre de la aplicación";
+
+/* insert your information text */
+"Insert your information to log in:" = "Inserte su información para log in:";
+
+/* Remember User Name */
+"Remember User Name" = "Recordar nombre de usuario";
+
+/* Forgot your password? */
+"Forgot your password?" = "¿Olvidaste tu contraseña?";

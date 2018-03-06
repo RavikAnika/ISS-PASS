@@ -1,0 +1,26 @@
+/* OK */
+"OK" = "Nõus";
+
+/* Cancel */
+"Cancel" = "Tühista";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "Sisselogimiseks skaneeri sõrmejälg";
+
+/* Unsuccessful */
+"Unsuccessful" = "Ebaõnnestus";
+
+/* Authentication Failed */
+"Authentication Failed" = "Autentimine ebaõnnestus";
+
+/* System Cancelled */
+"System Cancelled" = "Toiming tühistatud";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "Ei saa autentida";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Puute-ID ei ole kättesaadav";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "Puute-ID ei ole registreeritud";

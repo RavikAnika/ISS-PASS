@@ -1,0 +1,26 @@
+/* OK */
+"OK" = "OK";
+
+/* Cancel */
+"Cancel" = "Ακύρωση";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "Σαρώστε το δακτυλικό αποτύπωμα για να συνδεθείτε";
+
+/* Unsuccessful */
+"Unsuccessful" = "Ανεπιτυχής";
+
+/* Authentication Failed */
+"Authentication Failed" = "Η ταυτοποίηση απέτυχε";
+
+/* System Cancelled */
+"System Cancelled" = "Ακυρώθηκε από το σύστημα";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "Αδύνατη αυθεντικοποίηση";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Το Touch ID δεν είναι διαθέσιμο";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "Το Touch ID δεν είναι εγγεγραμμένο";

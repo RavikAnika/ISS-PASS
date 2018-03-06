@@ -1,0 +1,92 @@
+/* An email has been sent to you, containing your password */
+"An email has been sent to you, containing your password" = "An email has been sent to you, containing your password";
+
+/* Are you sure you want to log out? */
+"Are you sure you want to log out?" = "Are you sure you want to log out?";
+
+/* Authentication Failed */
+"Authentication Failed" = "Authentication Failed";
+
+/* Cancel */
+"Cancel" = "Cancel";
+
+/* (No Commment) */
+"Error" = "Error";
+
+/* (No Commment) */
+"Welcome" = "Welcome";
+
+/* (No Commment) */
+"Local Authentication not available" = "Local Authentication not available";
+
+/* Login details required */
+"Login details required" = "Login details required";
+
+/* Make sure you have entered a user name */
+"Make sure you have entered a user name" = "Make sure you have entered a user name";
+
+/* Make sure you have entered a user name and password */
+"Make sure you have entered a user name and password" = "Make sure you have entered a user name and password";
+
+/* No login details have been stored for your fingerprint yet. Please enter your details in the login screen. */
+"No login details have been stored for your fingerprint yet. Please enter your details in the login screen." = "No login details have been stored for your fingerprint yet. Please enter your details in the login screen.";
+
+/* OK */
+"OK" = "OK";
+
+/* (No Commment) */
+"Passcode has not been set on this device" = "Passcode has not been set on this device";
+
+/* (No Commment) */
+"Please authenticate in order to proceed" = "Please authenticate in order to proceed";
+
+/* Sorry, this functionality has not been implemented */
+"Sorry, this functionality has not been implemented" = "Sorry, this functionality has not been implemented";
+
+/* System Cancelled */
+"System Cancelled" = "System Cancelled";
+
+/* (No Commment) */
+"Touch ID has not been configured on this device" = "Touch ID has not been configured on this device";
+
+/* (No Commment) */
+"Touch ID is not supported by this device" = "Touch ID is not supported by this device";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "Unable to Authenticate";
+
+/* Unsuccessful */
+"Unsuccessful" = "Unsuccessful";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "Scan fingerprint to log in";
+
+/* Enter Username and Password */
+"Enter Username and Password" = "Enter Username and Password";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Touch ID is not available";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "Touch ID is not enrolled";
+
+/* User name */
+"User name" = "User name";
+
+/* Password */
+"Password" = "Password";
+
+/* Log in */
+"Log in" = "Log in";
+
+/* heading text */
+"headingText" = "ISS PASS";
+
+/* insert your information text */
+"Insert your information to log in:" = "Insert your information to log in:";
+
+/* Remember User Name */
+"Remember User Name" = "Remember User Name";
+
+/* Forgot your password? */
+"Forgot your password?" = "Forgot your password?";

@@ -1,0 +1,26 @@
+/* OK */
+"OK" = "אישור";
+
+/* Cancel */
+"Cancel" = "בטל";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "סרוק טביעת אצבע כדי להיכנס למערכת";
+
+/* Unsuccessful */
+"Unsuccessful" = "לא הצליח";
+
+/* Authentication Failed */
+"Authentication Failed" = "האימות נכשל";
+
+/* System Cancelled */
+"System Cancelled" = "בוטל על ידי המערכת";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "לא מסוגל לאמת";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "זיהוי מגע אינו זמין";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "זיהוי מגע לא נרשם";

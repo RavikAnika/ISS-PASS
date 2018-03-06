@@ -1,0 +1,26 @@
+/* OK */
+"OK" = "OK";
+
+/* Cancel */
+"Cancel" = "Адмяніць";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "Сканаваць адбіткі пальцаў для ўвахода ў сістэму";
+
+/* Unsuccessful */
+"Unsuccessful" = "Няўдала";
+
+/* Authentication Failed */
+"Authentication Failed" = "Аўтэнтыфікацыя не пройдзена";
+
+/* System Cancelled */
+"System Cancelled" = "Адменена сістэмай";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "Немагчыма прайсці аўтэнтыфікацыю";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Уваход па адбітку пальца не даступны";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "Уваход па адбітку пальца не зарэгістраваны";

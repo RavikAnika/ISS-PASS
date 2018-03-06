@@ -1,0 +1,93 @@
+/* An email has been sent to you, containing your password */
+"An email has been sent to you, containing your password" = "パスワードがあなたのメールに送られました";
+
+/* Are you sure you want to log out? */
+"Are you sure you want to log out?" = "本当にログアウトしますか?";
+
+/* Authentication Failed */
+"Authentication Failed" = "認証に失敗しました。";
+
+/* Cancel */
+"Cancel" = "キャンセル";
+
+/* (No Commment) */
+"Error" = "エラー";
+
+/* (No Commment) */
+"Welcome" = "ようこそ";
+
+/* (No Commment) */
+"Local Authentication not available" = "ローカル認証は利用できません";
+
+/* Login details required */
+"Login details required" = "ログイン情報が必要です";
+
+/* Make sure you have entered a user name */
+"Make sure you have entered a user name" = "ユーザー名は必ず入力してください";
+
+/* Make sure you have entered a user name and password */
+"Make sure you have entered a user name and password" = "ユーザー名とパスワードを必ず入力してください";
+
+/* No login details have been stored for your fingerprint yet. Please enter your details in the login screen. */
+"No login details have been stored for your fingerprint yet. Please enter your details in the login screen." = "指紋認証の情報が入力されていません。あなたの詳細情報をログイン画面で入力してください。";
+
+/* OK */
+/* "OK" = "はい"; */
+"OK" = "OK";
+
+/* (No Commment) */
+"Passcode has not been set on this device" = "パスコードがこの端末に設定されていません";
+
+/* (No Commment) */
+"Please authenticate in order to proceed" = "進めるには認証を行ってください";
+
+/* Sorry, this functionality has not been implemented */
+"Sorry, this functionality has not been implemented" = "申し訳ございません、機能が正常に作動されませんでした";
+
+/* System Cancelled */
+"System Cancelled" = "システムがキャンセルされました";
+
+/* (No Commment) */
+"Touch ID has not been configured on this device" = "タッチIDがこの端末に設定されていません";
+
+/* (No Commment) */
+"Touch ID is not supported by this device" = "タッチIDをこの端末はサポートしていません";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "認証できませんでした";
+
+/* Unsuccessful */
+"Unsuccessful" = "正常に行われませんでした";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "ログインするためにスキャンしてください。";
+
+/* Enter Username and Password */
+"Enter Username and Password" = "ユーザー名とパスワードを入力";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Touch ID は使用できません";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "Touch ID は登録されていません";
+
+/* User name */
+"User name" = "ユーザー名";
+
+/* Password */
+"Password" = "パスワード";
+
+/* Sign in */
+"Log in" = "サインイン";
+
+/* heading text */
+"headingText" = "アプリ名";
+
+/* insert your information text */
+"Insert your information to log in:" = "ログインするための情報を挿入します。:";
+
+/* Remember User Name */
+"Remember User Name" = "ユーザー名を記憶";
+
+/* Forgot your password? */
+"Forgot your password?" = "パスワードをお忘れですか？";

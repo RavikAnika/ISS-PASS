@@ -1,0 +1,92 @@
+/* An email has been sent to you, containing your password */
+"An email has been sent to you, containing your password" = "An email has been sent to you, containing your password";
+
+/* Are you sure you want to log out? */
+"Are you sure you want to log out?" = "Are you sure you want to log out?";
+
+/* Authentication Failed */
+"Authentication Failed" = "Login non riuscito";
+
+/* Cancel */
+"Cancel" = "Annulla";
+
+/* (No Commment) */
+"Error" = "Error";
+
+/* (No Commment) */
+"Welcome" = "Welcome";
+
+/* (No Commment) */
+"Local Authentication not available" = "Local Authentication not available";
+
+/* Enter Username and  Password */
+"Enter Username and  Password" = "Immetti nome utente e password";
+
+/* Login details required */
+"Login details required" = "Login details required";
+
+/* Make sure you have entered a user name */
+"Make sure you have entered a user name" = "Immetti nome utente";
+
+/* Make sure you have entered a user name and password */
+"Make sure you have entered a user name and password" = "Si prega di verificare nome utente e password";
+
+/* No login details have been stored for your fingerprint yet. Please enter your details in the login screen. */
+"No login details have been stored for your fingerprint yet. Please enter your details in the login screen." = "No login details have been stored for your fingerprint yet. Please enter your details in the login screen.";
+
+/* OK */
+"OK" = "OK";
+
+/* (No Commment) */
+"Passcode has not been set on this device" = "Passcode has not been set on this device";
+
+/* (No Commment) */
+"Please authenticate in order to proceed" = "Please authenticate in order to proceed";
+
+/* User Name Password Incorrect */
+"Your username or password is incorrect." = "Nome utente o password non corretti";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "Login tramite impronta digitale";
+
+/* Sorry, this functionality has not been implemented */
+"Sorry, this functionality has not been implemented" = "Sorry, this functionality has not been implemented";
+
+/* System Cancelled */
+"System Cancelled" = "Processo interrotto";
+
+/* (No Commment) */
+"Touch ID has not been configured on this device" = "Touch ID has not been configured on this device";
+
+/* (No Commment) */
+"Touch ID is not supported by this device" = "Touch ID is not supported by this device";
+
+/* Network Error */
+"Network Connection Lost" = "Connessione di rete persa";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "Login non riuscito";
+
+/* Unsuccessful */
+"Unsuccessful" = "Errore";
+
+/* User name */
+"User name" = "Nome utente";
+
+/* Password */
+"Password" = "Password";
+
+/* Sign in */
+"Log in" = "Login";
+
+/* heading text */
+"headingText" = "App Name";
+
+/* insert your information text */
+"Insert your information to log in:" = "Insert your information to log in:";
+
+/* Remember User Name */
+"Remember User Name" = "Remember User Name";
+
+/* Forgot your password? */
+"Forgot your password?" = "Forgot your password?";

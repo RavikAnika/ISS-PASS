@@ -1,0 +1,26 @@
+/* OK */
+"OK" = "확인";
+
+/* Cancel */
+"Cancel" = "취소";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "로그인하려면 지문을 스캔하십시오";
+
+/* Unsuccessful */
+"Unsuccessful" = "실패";
+
+/* Authentication Failed */
+"Authentication Failed" = "인증 실패";
+
+/* System Cancelled */
+"System Cancelled" = "시스템이 취소됨";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "인증할 수 없음";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "터치 ID를 이용할 수 없음";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "터치 ID가 등록되지 않음";

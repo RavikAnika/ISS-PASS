@@ -1,0 +1,26 @@
+/* OK */
+"OK" = "OK";
+
+/* Cancel */
+"Cancel" = "Avbryt";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "Skan fingeravtrykk for å logge på";
+
+/* Unsuccessful */
+"Unsuccessful" = "Mislykket";
+
+/* Authentication Failed */
+"Authentication Failed" = "Godkjenning mislyktes";
+
+/* System Cancelled */
+"System Cancelled" = "System avbrutt";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "Kan ikke godkjenne";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Touch-ID er ikke tilgjengelig";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "Touch-ID er ikke registrert";

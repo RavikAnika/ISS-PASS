@@ -1,0 +1,21 @@
+PODS:
+  - AKKeychain (1.5.0)
+  - AKLogger (1.5.0)
+  - AKLogin (1.5.0):
+    - AKKeychain
+  - AKNetworking (1.5.0)
+
+DEPENDENCIES:
+  - AKLogger
+  - AKLogin
+  - AKNetworking
+
+SPEC CHECKSUMS:
+  AKKeychain: ae76954182999a1aff6a460d1924f99e666473ae
+  AKLogger: c8f26f2b4ac2211d816b646095fd0d4de37fde8f
+  AKLogin: bd6c5d7f8f921462366e04bc2148e9881002c3aa
+  AKNetworking: 3aa853d8208837cee8dd896d1c1150ab8c35d675
+
+PODFILE CHECKSUM: b5e89cd4345f42221e725fd2db049bb5bdd48443
+
+COCOAPODS: 1.3.1

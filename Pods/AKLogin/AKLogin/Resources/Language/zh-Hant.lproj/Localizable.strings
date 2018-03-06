@@ -1,0 +1,26 @@
+/* OK */
+"OK" = "确定";
+
+/* Cancel */
+"Cancel" = "取消";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "扫描指纹以登录";
+
+/* Unsuccessful */
+"Unsuccessful" = "不成功";
+
+/* Authentication Failed */
+"Authentication Failed" = "验证失败";
+
+/* System Cancelled */
+"System Cancelled" = "系统已取消";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "无法验证";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "指纹识别不可用";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "指纹识别未登记";

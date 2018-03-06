@@ -1,0 +1,95 @@
+/* An email has been sent to you, containing your password */
+"An email has been sent to you, containing your password" = "Eine E-Mail mit Ihrem Passwort wurde an Sie versendet";
+
+/* Are you sure you want to log out? */
+"Are you sure you want to log out?" = "Wollen Sie sich wirklich ausloggen?";
+
+/* Authentication Failed */
+"Authentication Failed" = "Authentifizierung fehlgeschlagen";
+
+/* Cancel */
+"Cancel" = "Abbrechen";
+
+/* (No Commment) */
+"Error" = "Error";
+
+/* (No Commment) */
+"Welcome" = "Welcome";
+
+/* (No Commment) */
+"Local Authentication not available" = "Local Authentication not available";
+
+/* Enter Username and  Password */
+"Enter Username and  Password" = "Benutzername und Passwort eingeben";
+
+/* Login details required */
+"Login details required" = "Login Details werden benötigt";
+
+/* Make sure you have entered a user name */
+"Make sure you have entered a user name" = "Prüfen Sie ob der Benutzername eingegeben wurde";
+
+/* Make sure you have entered a user name and password */
+"Make sure you have entered a user name and password" = "Prüfen Sie ob Benutzername und Passwort eingegeben wurden";
+
+/* No login details have been stored for your fingerprint yet. Please enter your details in the login screen. */
+"No login details have been stored for your fingerprint yet. Please enter your details in the login screen." = "Bisher wurden für Ihren Fingerabdruck noch keine Login Daten gespeichert. Bitte geben Sie diese am Login Bildschirm ein.";
+
+/* OK */
+"OK" = "OK";
+
+/* (No Commment) */
+"Passcode has not been set on this device" = "Passcode has not been set on this device";
+
+/* (No Commment) */
+"Please authenticate in order to proceed" = "Please authenticate in order to proceed";
+
+/* User Name Password Incorrect */
+"Your username or password is incorrect." = "Ihr Benutzername oder Passwort ist nicht korrekt";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "Zur Anmeldung Fingerabdruck scannen";
+
+/* Sorry, this functionality has not been implemented */
+"Sorry, this functionality has not been implemented" = "Diese Funktion wurde leide noch nicht implementiert.";
+
+/* System Cancelled */
+"System Cancelled" = "Vorgang abgebrochen";
+
+/* (No Commment) */
+"Touch ID has not been configured on this device" = "Touch ID has not been configured on this device";
+
+/* (No Commment) */
+"Touch ID is not supported by this device" = "Touch ID is not supported by this device";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Touch ID ist nicht verfügbar";
+
+/* Network Error */
+"Network Connection Lost" = "Netzwerkverbindung verloren";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "Authentifizierung fehlgeschlagen";
+
+/* Unsuccessful */
+"Unsuccessful" = "Nicht erfolgreich";
+
+/* User name */
+"User name" = "Benutzername";
+
+/* Password */
+"Password" = "Passwort";
+
+/* Sign in */
+"Log in" = "Anmelden";
+
+/* heading text */
+"headingText" = "ISS-PASS";
+
+/* insert your information text */
+"Insert your information to log in:" = "Insert your information to log in:";
+
+/* Remember User Name */
+"Remember User Name" = "Remember User Name";
+
+/* Forgot your password? */
+"Forgot your password?" = "Forgot your password?";

@@ -1,0 +1,26 @@
+/* OK */
+"OK" = "OK";
+
+/* Cancel */
+"Cancel" = "Annuleren";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "Scan uw vingerafdruk om in te loggen";
+
+/* Unsuccessful */
+"Unsuccessful" = "Niet geslaagd";
+
+/* Authentication Failed */
+"Authentication Failed" = "Verificatie mislukt";
+
+/* System Cancelled */
+"System Cancelled" = "Systeem geannuleerd";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "Verificatie niet mogelijk";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Touch ID is niet beschikbaar";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "U bent niet ingeschreven voor Touch ID";

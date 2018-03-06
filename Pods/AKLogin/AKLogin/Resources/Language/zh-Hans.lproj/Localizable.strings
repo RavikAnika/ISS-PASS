@@ -1,0 +1,92 @@
+/* An email has been sent to you, containing your password */
+"An email has been sent to you, containing your password" = "电子邮件已经发送给您,包含您的密码";
+
+/* Are you sure you want to log out? */
+"Are you sure you want to log out?" = "确定要退出登录?";
+
+/* Authentication Failed */
+"Authentication Failed" = "认证失败";
+
+/* Cancel */
+"Cancel" = "取消";
+
+/* (No Commment) */
+"Error" = "异常";
+
+/* (No Comment) */
+"Welcome" =  "歡迎";
+
+/* (No Commment) */
+"Local Authentication not available" = "本地认证不可用";
+
+/* Login details required */
+"Login details required" = "请提供登录信息";
+
+/* Make sure you have entered a user name */
+"Make sure you have entered a user name" = "请确认您已输入用户名";
+
+/* Make sure you have entered a user name and password */
+"Make sure you have entered a user name and password" = "请确认您已输入用户名和密码";
+
+/* No login details have been stored for your fingerprint yet. Please enter your details in the login screen. */
+"No login details have been stored for your fingerprint yet. Please enter your details in the login screen." = "您的指纹没有存储登录信息。请在登录页面输入您的详细信息。";
+
+/* OK */
+"OK" = "是";
+
+/* (No Commment) */
+"Passcode has not been set on this device" = "本设备中尚未设置您的密码";
+
+/* (No Commment) */
+"Please authenticate in order to proceed" = "请验证";
+
+/* Sorry, this functionality has not been implemented */
+"Sorry, this functionality has not been implemented" = "对不起，该功能尚未完成";
+
+/* System Cancelled */
+"System Cancelled" = "系统取消";
+
+/* (No Commment) */
+"Touch ID has not been configured on this device" = "Touch ID 尚未在该设备上进行配置";
+
+/* (No Commment) */
+"Touch ID is not supported by this device" = "该设备不支持Touch ID";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "无法验证";
+
+/* Unsuccessful */
+"Unsuccessful" = "失败";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "扫描指纹进行登录";
+
+/* Enter Username and  Password */
+"Enter Username and Password" = "输入用户名和密码";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "指纹识别不可用";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "指纹识别未登记";
+
+/* User name */
+"User name" = "用户名";
+
+/* Password */
+"Password" = "密码";
+
+/* Sign in */
+"Log in" = "登录";
+
+/* heading text */
+"headingText" = "应用名称";
+
+/* insert your information text */
+"Insert your information to log in:" = "将您的信息，请登录：";
+
+/* Remember User Name */
+"Remember User Name" = "记住用户名";
+
+/* Forgot your password? */
+"Forgot your password?" = "忘记密码了吗？";

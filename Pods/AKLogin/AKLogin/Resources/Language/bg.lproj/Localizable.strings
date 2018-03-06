@@ -1,0 +1,26 @@
+/* OK */
+"OK" = "ОК";
+
+/* Cancel */
+"Cancel" = "Отмяна";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "Сканиране на пръстов отпечатък за влизане";
+
+/* Unsuccessful */
+"Unsuccessful" = "Неуспешен";
+
+/* Authentication Failed */
+"Authentication Failed" = "Неуспешно удостоверяване";
+
+/* System Cancelled */
+"System Cancelled" = "Системата е отменена";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "Неуспешно удостоверяване";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Докосване на ИД не е налично";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "Докосване на ИД не е включено";

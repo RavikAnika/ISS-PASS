@@ -1,0 +1,11 @@
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AKKeychain-iOS11.2" "$PODS_CONFIGURATION_BUILD_DIR/AKLogger-iOS11.2" "$PODS_CONFIGURATION_BUILD_DIR/AKLogin-iOS11.2" "$PODS_CONFIGURATION_BUILD_DIR/AKNetworking-iOS11.2"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/AKKeychain-iOS11.2/AKKeychain.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/AKLogger-iOS11.2/AKLogger.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/AKLogin-iOS11.2/AKLogin.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/AKNetworking-iOS11.2/AKNetworking.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "AKKeychain" -framework "AKLogger" -framework "AKLogin" -framework "AKNetworking"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

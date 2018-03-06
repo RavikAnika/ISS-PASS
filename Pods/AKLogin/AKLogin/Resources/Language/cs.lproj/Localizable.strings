@@ -1,0 +1,26 @@
+/* OK */
+"OK" = "OK";
+
+/* Cancel */
+"Cancel" = "Zrušit";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "Pro přihlášení naskenujte otisk prstu";
+
+/* Unsuccessful */
+"Unsuccessful" = "Neúspěch";
+
+/* Authentication Failed */
+"Authentication Failed" = "Ověření se nezdařilo";
+
+/* System Cancelled */
+"System Cancelled" = "Systém byl zrušen";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "Ověření nebylo možné";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Touch ID není dostupné";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "Touch ID není zařazen";

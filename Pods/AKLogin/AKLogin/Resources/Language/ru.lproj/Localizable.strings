@@ -1,0 +1,26 @@
+/* OK */
+"OK" = "OK";
+
+/* Cancel */
+"Cancel" = "Отмена";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "Сканируйте отпечаток пальца для входа в систему";
+
+/* Unsuccessful */
+"Unsuccessful" = "Попытка не удалась";
+
+/* Authentication Failed */
+"Authentication Failed" = "Проверка подлинности не пройдена";
+
+/* System Cancelled */
+"System Cancelled" = "Отменено системой";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "Не удалось выполнить проверку подлинности";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Вход по отпечатку пальца недоступен";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "Вход по отпечатку пальца не установлен";

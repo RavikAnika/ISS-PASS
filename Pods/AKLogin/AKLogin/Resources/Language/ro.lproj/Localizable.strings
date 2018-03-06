@@ -1,0 +1,26 @@
+/* OK */
+"OK" = "OK";
+
+/* Cancel */
+"Cancel" = "Anulare";
+
+/* Scan fingerprint to log in */
+"Scan fingerprint to log in" = "Scanați amprenta pentru autentificare";
+
+/* Unsuccessful */
+"Unsuccessful" = "Eșuat";
+
+/* Authentication Failed */
+"Authentication Failed" = "Autentificare eșuată";
+
+/* System Cancelled */
+"System Cancelled" = "Anulat de sistem";
+
+/* Unable to Authenticate */
+"Unable to Authenticate" = "Nu s-a putut realiza autentificarea";
+
+/* Touch ID is not available */
+"Touch ID is not available" = "Identificatorul tactil nu este disponibil";
+
+/* Touch ID is not enrolled */
+"Touch ID is not enrolled" = "Identificatorul tactil nu este înregistrat";
