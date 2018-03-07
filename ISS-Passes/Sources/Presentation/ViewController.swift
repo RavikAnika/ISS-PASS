@@ -141,15 +141,18 @@ class ViewController : UIViewController ,CLLocationManagerDelegate,UITableViewDa
         let currentlocation = locations[0];
         // pass the coordinates to the model
         
-        Pass.getAllPasses(Lat: currentlocation.coordinate.latitude, long: currentlocation.coordinate.longitude) { (success, error) in
-            DispatchQueue.main.async {
-                self.tableview.reloadData()
-            }
-            
-         // Errror handling if service returns error
+        Pass.getAllPasses(Lat: currentlocation.coordinate.latitude, long: currentlocation.coordinate.longitude) { (success, listofPasses, error) in
             if error != nil {
                 self.displayAlert(alertTitle: "Unable to retrieve data", alertMessage: "Data not available")
             }
+            else {
+            DispatchQueue.main.async {
+                self.listofPasses = listofPasses
+                self.tableview.reloadData()
+               }
+            }
+            // Errror handling if service returns error
+           
         }
     }
     
@@ -177,7 +180,7 @@ class ViewController : UIViewController ,CLLocationManagerDelegate,UITableViewDa
     // MARK: TableView Delegate and Datasource methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Pass.listofPasses.count
+        return self.listofPasses.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -186,8 +189,8 @@ class ViewController : UIViewController ,CLLocationManagerDelegate,UITableViewDa
         if cell == nil {
             cell = UITableViewCell(style: UITableViewCellStyle.value2, reuseIdentifier: cellIdentifier)
         }
-        if Pass.listofPasses.count > 0 {
-            let passAtIndex = Pass.listofPasses[indexPath.row] as Pass
+        if self.listofPasses.count > 0 {
+            let passAtIndex = self.listofPasses[indexPath.row] as Pass
             cell?.textLabel!.text = "Duration: " + String(passAtIndex.duration!) as String
             cell?.textLabel?.textAlignment = NSTextAlignment.left
             cell?.detailTextLabel?.textAlignment = NSTextAlignment.right

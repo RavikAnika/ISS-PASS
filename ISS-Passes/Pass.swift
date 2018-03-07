@@ -12,7 +12,7 @@ class Pass:NSObject {
     
     /// ------ Variable Declarations ----
     
-    static var listofPasses = [Pass]()
+   private static var listofPasses = [Pass]()
     var duration: String?
     var riseTime: String?
     static let urlString = "http://api.open-notify.org/iss-pass.json"
@@ -20,7 +20,7 @@ class Pass:NSObject {
     
     // ---- Service call to get passes ----------
     
-    class  func getAllPasses(Lat:Double, long :Double, completion: @escaping (_ success: Bool?, _ error: NSError?) -> Void) {
+    class  func getAllPasses(Lat:Double, long :Double, completion: @escaping (_ success: Bool?, _ passes:[Pass], _ error: NSError?) -> Void) {
         let url = URL(string:urlString + "?lat=" + "\(Lat)" + "&lon=" + "\(long)")
         if let urlString = url {
             let task = URLSession.shared.dataTask(with: urlString) { (data, response, error) in
@@ -43,13 +43,13 @@ class Pass:NSObject {
                                                     pass.riseTime = self.getDateValueFromTimeStamp(timeInterval: eachpass["risetime"] as! Int)
                                                     Pass.listofPasses.append(pass)
                                                 }
-                                                completion(true, nil)
+                                                completion(true, Pass.listofPasses, nil)
                                             }
                                         }
                                     }
                                 }
                                 else {
-                                    completion(false, NSError(domain: "Com.Ravi", code: 401, userInfo: nil))
+                                    completion(false, Pass.listofPasses ,NSError(domain: "Com.Ravi", code: 401, userInfo: nil))
                                 }
                             }
                         }

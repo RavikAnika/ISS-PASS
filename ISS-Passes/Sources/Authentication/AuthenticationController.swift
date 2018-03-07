@@ -56,7 +56,6 @@ class AuthenticationController: UIViewController, LoginDelegate {
         transitionFromViewController(securedRootViewController, toController: loginViewController, options: UIViewAnimationOptions())
         self.securedRootViewController = nil
         
-        Pass.listofPasses = [Pass]()
         if let credentials = readStoredCredentialsFromKeychain() as? [ String : String ] {
             self.loginViewController.defaultUserID = credentials["username"]
             self.loginViewController.defaultPassword = credentials["password"]
