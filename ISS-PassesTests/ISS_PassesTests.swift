@@ -27,7 +27,6 @@ class ISS_PassesTests: XCTestCase {
     
     func testPasses() {
         Pass.getAllPasses(Lat: 37.212, long: -67.788) { (Success, listofPasses, error) in
-            print("The list of Passes", listofPasses, Success, error)
             XCTAssertNil(listofPasses , "list of Passes are nil")
             XCTAssertFalse(Success!, "No Passes")
             XCTAssertNotNil(error!, "Passes api service returned error")
